@@ -30,3 +30,7 @@ Advertisers: Customers/driver demographics will be available.
 Fleet customers: fleet performance, compare against competition.
 
 Polkadot, Ink Smart Contracts and Intel oneAPI toolkit: We are using Polkadot, Ink Smart Contracts and Intel oneAPI for solving multiple challenges in investigative case management of road incidents for the admin role: sentiment analysis of a particular road incident for the admin role, social media text mining for a road incident and classification and severity of the incidents, early stage incident response and prevention.   Website: https://sites.google.com/view/transport-intel/home?authuser=1
+
+
+Ink NFT viewer for viewing the NFTs of NFC tags of vehicles and service personnel: We are extending the Ink NFT viewer dapp for viewing the NFTs generated for the NFC tags of vehicles and service repair personnel at the incident sites. Please visit: https://github.com/aspiringsecurity/Transport/tree/main/ink-nft-viewer
+
