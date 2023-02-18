@@ -34,3 +34,5 @@ Polkadot, Ink Smart Contracts and Intel oneAPI toolkit: We are using Polkadot, I
 
 Ink NFT viewer for viewing the NFTs of NFC tags of vehicles and service personnel: We are extending the Ink NFT viewer dapp for viewing the NFTs generated for the NFC tags of vehicles and service repair personnel at the incident sites. Please visit: https://github.com/aspiringsecurity/Transport/tree/main/ink-nft-viewer
 
+WASM smart contract for decentralized Transport Incident Management: We are developing smart contracts in wasm ink for decentralized Transport Incident Management, deploying on Shibuya, extending UI interaction with astar.js. Please visit https://github.com/aspiringsecurity/Transport/tree/main/wasm-transport-dao
+
