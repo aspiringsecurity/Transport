@@ -37,5 +37,4 @@ Ink NFT viewer for viewing the NFTs of NFC tags of vehicles and service personne
 
 WASM smart contract for decentralized Transport Incident Management: We are developing smart contracts in wasm ink for decentralized Transport Incident Management, deploying on Shibuya, extending UI interaction with astar.js. Please visit https://github.com/aspiringsecurity/Transport/tree/main/wasm-transport-dao
 
-
-
+Experiments with pallet assets chain extension: https://github.com/aspiringsecurity/Transport/tree/main/pallet-assets-chain-extension
