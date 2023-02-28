@@ -30,7 +30,9 @@ Advertisers: Customers/driver demographics will be available.
 Fleet customers: fleet performance, compare against competition.
 
 
-Polkadot, Ink Smart Contracts and Intel oneAPI toolkit: We are using Polkadot, Ink Smart Contracts and Intel oneAPI for solving multiple challenges in investigative case management of road incidents for the admin role: sentiment analysis of a particular road incident for the admin role, social media text mining for a road incident and classification and severity of the incidents, early stage incident response and prevention.   Website: https://sites.google.com/view/transport-intel/home?authuser=1
+# Polkadot, Ink Smart Contracts and Intel oneAPI toolkit 
+
+We are using Polkadot, Ink Smart Contracts and Intel oneAPI for solving multiple challenges in investigative case management of road incidents for the admin role: sentiment analysis of a particular road incident for the admin role, social media text mining for a road incident and classification and severity of the incidents, early stage incident response and prevention.   Website: https://sites.google.com/view/transport-intel/home?authuser=1
 
 Polkadot Analytics and Visualization Tool: https://github.com/aspiringsecurity/Transport/tree/main/dot-analytics-tooling
 
@@ -41,7 +43,7 @@ WASM smart contract for decentralized Transport Incident Management: We are deve
 Experiments with pallet assets chain extension: https://github.com/aspiringsecurity/Transport/tree/main/pallet-assets-chain-extension
 
 
-Intel one API specific instructions: 
+# Intel one API specific instructions
 
 1. Intel oneapi powered analytics, navigation and inspection using UAVs and drones using NXP iot modular gateway: We are extending the example of navigation and inspection using drones to enable local air traffic control,  detecting and managing drones and setting up geo-fences, communication setup for drones using predictive analytics and automation. Please visit: https://github.com/aspiringsecurity/Transport/tree/main/roadincidentmanagement/transport-intel-oneapi-analytics/incident-oneapi-analytics-navigation-inspection 
 
