@@ -43,6 +43,22 @@ Experiments with pallet assets chain extension: https://github.com/aspiringsecur
 
 Intel one API specific instructions: 
 
-1. Intel oneapi powered analytics, navigation and inspection using UAVs and drones using NXP iot modular gateway: https://github.com/aspiringsecurity/Transport/tree/main/roadincidentmanagement/transport-intel-oneapi-analytics/incident-oneapi-analytics-navigation-inspection 
+1. Intel oneapi powered analytics, navigation and inspection using UAVs and drones using NXP iot modular gateway: We are extending the example of navigation and inspection using drones to enable local air traffic control,  detecting and managing drones and setting up geo-fences, communication setup for drones using predictive analytics and automation. Please visit: https://github.com/aspiringsecurity/Transport/tree/main/roadincidentmanagement/transport-intel-oneapi-analytics/incident-oneapi-analytics-navigation-inspection 
 
-2. Intel oneapi Spare parts billing and automation using onchain/offchain payments: https://github.com/aspiringsecurity/Transport/tree/main/dot-analytics-tooling/transport-intel-oneapi-analytics/spare-parts-intel-oneapi-invoice-to-cash-automation
+Features:
+
+•Detection : Identifying the drones & UAVs in the video feed using object detection.
+
+•Discovery : Logging the identities of the drones & UAVs flying in a particular air space at any instant of time, using exchange of unique identifiers. 
+
+•Geo-fencing : Discovering unlawful presence and raising alarms using the detection & discovery data.
+
+•Monitoring : Looking out and reporting incidents based on event detection in visual data.
+
+•Analysis : Analyzing route patterns and incidents.     
+
+•Drone Incident Reporting : Publish drone incident reports.
+
+2. Intel oneapi Spare parts billing and automation using onchain/offchain payments: Please visit https://github.com/aspiringsecurity/Transport/tree/main/dot-analytics-tooling/transport-intel-oneapi-analytics/spare-parts-intel-oneapi-invoice-to-cash-automation
+
+We are extending the example of intel oneapi powered invoice to cash automation to develop an invoicing suite and Web3 Car Parts Dashboard that enables Transport Ministry and third party service and repair organizations to keep track of all the details of their transport assets, DeFi investments, transactions, and assets across all multiple chains and also displays DAO data using a data visualization chart. We are building our solution on top of an existing web3 dashboard system and wish to integrate an analytics, tabulation and collaboration tool namely EtherCalc.
