@@ -62,8 +62,15 @@ Data DAO for Monitoring, Incident Management, preserving vital data;  Decentrali
 
 Device Agnostic Architecture Details: https://sites.google.com/view/transport-intel/our-solution/architecture?authuser=1
 
+Traffic Management Architecture using UAVs: https://sites.google.com/view/transport-intel/our-solution/traffic-management-system?authuser=1
+
 We are using DAOtooling for coordination with a social focus around community collaboration for road incidents and alarms.
 
+
+Business Plan: https://drive.google.com/drive/u/4/folders/1_TjtuHxLzK-XnkRNszDnNncjo14Cui0M
+
+
+# Technical Details
 
 # Polkadot, Ink Smart Contracts and Intel oneAPI toolkit 
 
@@ -99,3 +106,5 @@ Features:
 2. Intel oneapi Spare parts billing and automation using onchain/offchain payments: Please visit https://github.com/aspiringsecurity/Transport/tree/main/dot-analytics-tooling/transport-intel-oneapi-analytics/spare-parts-intel-oneapi-invoice-to-cash-automation
 
 We are extending the example of intel oneapi powered invoice to cash automation to develop an invoicing suite and Web3 Car Parts Dashboard that enables Transport Ministry and third party service and repair organizations to keep track of all the details of their transport assets, DeFi investments, transactions, and assets across all multiple chains and also displays DAO data using a data visualization chart. We are building our solution on top of an existing web3 dashboard system and wish to integrate an analytics, tabulation and collaboration tool namely EtherCalc.
+
+
