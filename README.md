@@ -8,6 +8,8 @@ Pitch Video: https://drive.google.com/drive/u/3/folders/1pke6_VQb9Zco8-WllI3n41x
 
 Website: https://sites.google.com/view/transport-intel/home?authuser=1
 
+Pitch Deck: 
+
 Our solution offers an Artificial Intelligence-based object detection system that utilizes Polkadot, Intel one API toolkit and ethereum blockchain solutions powered by IPFS storage for sorting information obtained from a variety of road junctions, cameras deployed at monitoring spots.
 
 Our app solution will enable effective design, engineering and delivery of  Polkadot, Intel one API toolkit aided solution to make roads safer and better using predictive analytics and automation for incident reporting and reduction in hazardous transportation with capabilities pluggable and extendable to 5 different personas: Driver, Police, Citizen, Dispatcher, Admin. Our solution will benefit: 
@@ -28,6 +30,11 @@ Smart Cities Policy Makers/ Government: Real time traffic flow, incident alert a
 Advertisers: Customers/driver demographics will be available.
 
 Fleet customers: fleet performance, compare against competition.
+
+
+# Architecture
+
+Data DAO for Monitoring, Incident Management, preserving vital data;  Decentralized NFT voting system for contract work by service providers, Votes are uploaded to IPFS with the most recent vote linking to one before, Creating an NFT on the for NFC tags of vehicles.
 
 
 # Polkadot, Ink Smart Contracts and Intel oneAPI toolkit 
