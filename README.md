@@ -11,6 +11,17 @@ Website: https://sites.google.com/view/transport-intel/home?authuser=1
 Demo with Sound: https://www.youtube.com/watch?v=tvSQ2EMqH5s
 
 
+# Features
+
+- 360 degrees access: Command and control centers can manage the complete lifecycle of incident reporting using Data DAOs, overall status, enable early stage prevention of accidents and road safety counseling, management of workforce at the incident site.
+
+- Incident Dashboard: Manage and track your incidents as a citizen along with sharing reviews and comments. Incident reporting, severity analytics and sentiment analysis using social media data for early stage detection and prevention of incidents.
+
+- Real Time Alerts and Live Streaming: Real time alerts and live streaming using open source streaming project for incident verification and quick action.
+
+- Real Time Analytics: Analytics of the incidents with sentiment analysis and live incident reporting. road safety eco-system. Health summary of the police staff, scheduling the staff. Reducing misinformation.
+
+
 # Description
 
 
