@@ -48,7 +48,7 @@ Alarm Viewer and Notifier:
 3. You can also delete an existing alarm.
 4. Data DAO for Monitoring, Incident Management, preserving vital data
 
-How to use the product: https://sites.google.com/view/transport-intel/home/works?authuser=1
+How the mobile version of the solution works?: https://sites.google.com/view/transport-intel/home/works?authuser=1
 
 
 # Architecture
