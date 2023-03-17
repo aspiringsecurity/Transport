@@ -8,33 +8,54 @@ Pitch Video: https://drive.google.com/drive/u/3/folders/1pke6_VQb9Zco8-WllI3n41x
 
 Website: https://sites.google.com/view/transport-intel/home?authuser=1
 
-Pitch Deck: 
 
 Our solution offers an Artificial Intelligence-based object detection system that utilizes Polkadot, Intel one API toolkit and ethereum blockchain solutions powered by IPFS storage for sorting information obtained from a variety of road junctions, cameras deployed at monitoring spots.
 
 Our app solution will enable effective design, engineering and delivery of  Polkadot, Intel one API toolkit aided solution to make roads safer and better using predictive analytics and automation for incident reporting and reduction in hazardous transportation with capabilities pluggable and extendable to 5 different personas: Driver, Police, Citizen, Dispatcher, Admin. Our solution will benefit: 
 
-Police Force 
-- 360 degrees access of the incidents to the action/ administration team. They can manage the complete lifecycle of incident reporting, overall status, traffic monitoring, managing police teams. Using machine learning they can also predict the incident occurrence at any area. This will help in taking necessary actions in advance to control the traffic. They can also use the solution for effective utilization of staff members and provide road safety counselling.
+- Police Force 
+360 degrees access of the incidents to the action/ administration team. They can manage the complete lifecycle of incident reporting, overall status, traffic monitoring, managing police teams. Using machine learning they can also predict the incident occurrence at any area. This will help in taking necessary actions in advance to control the traffic. They can also use the solution for effective utilization of staff members and provide road safety counselling.
 
-Ministry of Road and Transportation: Endeavor to change the car accident scenario by use of car technology to make driving safer and monitored for drivers, authorities, as well as other 3rd parties. With a mix of hardware and software, we will provide intelligent feedback about drive quality and help analyze past incidents, as well as predict future incidents.
+- Ministry of Road and Transportation: Endeavor to change the car accident scenario by use of car technology to make driving safer and monitored for drivers, authorities, as well as other 3rd parties. With a mix of hardware and software, we will provide intelligent feedback about drive quality and help analyze past incidents, as well as predict future incidents.
 
-Citizens and Cab aggregators: Reduction in the number of road accidents.
+- Citizens and Cab aggregators: Reduction in the number of road accidents.
 
-Insurance Companies: Aggregated/ anonymized driving data and incident data will be helpful to car insurance companies.
+- Insurance Companies: Aggregated/ anonymized driving data and incident data will be helpful to car insurance companies.
 
-OEMs and Dealerships: Vehicle diagnostics and in-car service consumption will be helpful for OEMs and Dealerships.
+- OEMs and Dealerships: Vehicle diagnostics and in-car service consumption will be helpful for OEMs and Dealerships.
 
-Smart Cities Policy Makers/ Government: Real time traffic flow, incident alert and parking data will be enable safer roads.
+- Smart Cities Policy Makers/ Government: Real time traffic flow, incident alert and parking data will be enable safer roads.
 
-Advertisers: Customers/driver demographics will be available.
+- Advertisers: Customers/driver demographics will be available.
 
-Fleet customers: fleet performance, compare against competition.
+- Fleet customers: fleet performance, compare against competition.
+
+
+# How it works?
+
+How it works:
+1. Camera Management: Add/edit/delete cameras using DAOs
+2. Object Detection using Pytorch/Tensorflow deep learning library using CNN neural networks.
+3.  Video analytics configuration using DAOs
+4. Live streaming with Object Detection Video Analytics
+5. Alarm storage. Save/delete alarm metadata and image to/from IPFS. Store the hash returned from IPFS and provide links to alarms and blockchain transaction details.
+6. Alarm Viewer: Add alarms with a single touch.
+
+Alarm Viewer and Notifier:
+
+1. Open the Alarm Settings menu from the home page.
+2. Add an alarm, set the wallpaper or choose an alarm tone.
+3. You can also delete an existing alarm.
+4. Data DAO for Monitoring, Incident Management, preserving vital data
 
 
 # Architecture
 
 Data DAO for Monitoring, Incident Management, preserving vital data;  Decentralized NFT voting system for contract work by service providers, Votes are uploaded to IPFS with the most recent vote linking to one before, Creating an NFT on the for NFC tags of vehicles.
+
+Device Agnostic Architecture Details: https://sites.google.com/view/transport-intel/our-solution/architecture?authuser=1
+
+We are using DAOtooling for coordination with a social focus around community collaboration for road incidents and alarms.
 
 
 # Polkadot, Ink Smart Contracts and Intel oneAPI toolkit 
