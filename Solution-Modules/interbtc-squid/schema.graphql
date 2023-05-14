@@ -1,0 +1,434 @@
+enum IssueStatus {
+    Completed
+    Cancelled
+    RequestedRefund
+    Expired
+    Pending
+}
+
+enum RedeemStatus {
+    Completed
+    Expired
+    Reimbursed
+    Retried
+    Pending
+}
+
+enum MarketState {
+    Active
+    Pending
+    Supervision
+}
+
+enum Token {
+    DOT
+    INTR
+    KSM
+    KINT
+    IBTC
+    KBTC
+}
+
+type NativeToken {
+    token: Token!
+}
+
+type ForeignAsset {
+    asset: Int!
+}
+
+type LendToken {
+    lendTokenId: Int!
+}
+
+type StableLpToken {
+    poolId: Int!
+}
+
+union PooledToken = NativeToken | ForeignAsset | StableLpToken | LendToken
+
+type LpToken {
+    token0: PooledToken!
+    token1: PooledToken!
+}
+
+union Currency = NativeToken | ForeignAsset | LendToken | LpToken | StableLpToken
+
+type RateModelJump {
+    baseRate: BigInt!
+    jumpRate: BigInt!
+    fullRate: BigInt!
+    jumpUtilization: Int!
+}
+
+type RateModelCurve {
+    baseRate: BigInt!
+}
+
+union RateModel = RateModelJump | RateModelCurve
+
+type Vault @entity {
+    id: ID!
+    accountId: String! @index
+    collateralToken: Currency!
+    wrappedToken: Currency!
+    registrationBlock: Height!
+    registrationTimestamp: DateTime!
+    lastActivity: Height
+}
+
+"Mapping of parachain raw/absolute blocks to parachain active blocks"
+type Height @entity {
+    id: ID!
+    "Should be equal to the absolute value, for determinism"
+    absolute: Int! @index
+    active: Int!
+}
+
+"BTC block stored by BTCRelay"
+type RelayedBlock @entity {
+    id: ID!
+    relayedAtHeight: Height! @index
+    timestamp: DateTime!
+    blockHash: String!
+    backingHeight: Int! @index
+    relayer: String
+}
+
+type Issue @entity {
+    id: ID!
+    request: IssueRequest!
+    griefingCollateral: BigInt!
+    userParachainAddress: String!
+    vaultWalletPubkey: String!
+    vaultBackingAddress: String!
+    vault: Vault!
+    period: IssuePeriod!
+    backingPayment: IssuePayment @derivedFrom(field: "issue")
+    status: IssueStatus @index
+    execution: IssueExecution @derivedFrom(field: "issue")
+    cancellation: IssueCancellation @derivedFrom(field: "issue")
+    refund: Refund @derivedFrom(field: "issue")
+}
+
+"Bitcoin payment executing an issue"
+type IssuePayment @entity {
+    issue: Issue! @unique
+    btcTxId: String!
+    confirmations: Int!
+    blockHeight: Int
+    amount: BigInt!
+}
+
+type IssueRequest {
+    amountWrapped: BigInt!
+    bridgeFeeWrapped: BigInt!
+    height: Height!
+    timestamp: DateTime!
+    backingHeight: Int!
+}
+
+type IssueExecution @entity {
+    issue: Issue! @unique
+    amountWrapped: BigInt!
+    bridgeFeeWrapped: BigInt!
+    height: Height!
+    timestamp: DateTime!
+}
+
+type IssueCancellation @entity {
+    issue: Issue! @unique
+    height: Height!
+    timestamp: DateTime!
+}
+
+"Refund on issue overpayment"
+type Refund @entity {
+    id: ID!
+    issue: Issue! @unique
+    issueID: String! # bootleg way to add a 2-way looking with minimal fuss
+    btcAddress: String!
+    amountPaid: BigInt!
+    btcFee: BigInt!
+    requestHeight: Height!
+    requestTimestamp: DateTime!
+    executionHeight: Height
+    executionTimestamp: DateTime
+}
+
+type Redeem @entity {
+    id: ID!
+    request: RedeemRequest!
+    bridgeFee: BigInt!
+    collateralPremium: BigInt!
+    btcTransferFee: BigInt!
+    userParachainAddress: String!
+    userBackingAddress: String!
+    vault: Vault!
+    period: RedeemPeriod!
+    backingPayment: RedeemPayment @derivedFrom(field: "redeem")
+    status: RedeemStatus
+    execution: RedeemExecution @derivedFrom(field: "redeem")
+    cancellation: RedeemCancellation @derivedFrom(field: "redeem")
+}
+
+type RedeemRequest {
+    requestedAmountBacking: BigInt!
+    height: Height!
+    timestamp: DateTime!
+    backingHeight: Int!
+}
+
+"Bitcoin payment executing a redeem"
+type RedeemPayment @entity {
+    redeem: Redeem! @unique
+    btcTxId: String!
+    confirmations: Int!
+    blockHeight: Int
+}
+
+type RedeemExecution @entity {
+    redeem: Redeem! @unique
+    height: Height!
+    timestamp: DateTime!
+}
+
+type RedeemCancellation @entity {
+    redeem: Redeem! @unique
+    height: Height!
+    timestamp: DateTime!
+    slashedCollateral: BigInt!
+    reimbursed: Boolean!
+}
+
+enum OracleUpdateType {
+    ExchangeRate
+    FeeEstimation
+}
+
+type OracleUpdate @entity {
+    id: ID!
+    height: Height!
+    timestamp: DateTime!
+    oracleId: String!
+    type: OracleUpdateType!
+    typeKey: Currency
+    updateValue: BigInt!
+    updateValueHuman: BigDecimal!
+}
+
+enum VolumeType {
+    Issued
+    Redeemed
+    Collateral
+    Staked
+    Locked
+    BridgeVolume
+}
+
+type CumulativeVolume @entity {
+    id: ID!
+    type: VolumeType!
+    tillTimestamp: DateTime!
+    amount: BigInt!
+}
+
+type CumulativeVolumePerCurrencyPair @entity {
+    id: ID!
+    type: VolumeType!
+    tillTimestamp: DateTime!
+    amount: BigInt!
+    amountHuman: BigDecimal!
+    wrappedCurrency: Currency
+    collateralCurrency: Currency
+}
+
+type PooledAmount {
+    amount: BigInt!
+    amountHuman: BigDecimal
+    token: PooledToken!
+}
+
+enum PoolType {
+    Standard
+    Stable
+}
+
+type CumulativeDexTradingVolumePerPool @entity {
+    id: ID!
+    poolId: String! @index
+    poolType: PoolType!
+    tillTimestamp: DateTime! @index
+    amounts: [PooledAmount!]!
+}
+
+type CumulativeDexTradingVolumePerAccount @entity {
+    id: ID!
+    accountId: String! @index
+    tillTimestamp: DateTime! @index
+    amounts: [PooledAmount!]!
+}
+
+type CumulativeDexTradingVolume @entity {
+    id: ID!
+    tillTimestamp: DateTime! @index
+    amounts: [PooledAmount!]!
+}
+
+type CumulativeDexTradeCountPerAccount  @entity {
+    id: ID!
+    accountId: String! @index
+    tillTimestamp: DateTime! @index
+    count: BigInt!
+}
+
+type CumulativeDexTradeCount  @entity {
+    id: ID!
+    tillTimestamp: DateTime! @index
+    count: BigInt!
+}
+
+type IssuePeriod @entity {
+    height: Height!
+    timestamp: DateTime!
+    value: Int!
+}
+
+type RedeemPeriod @entity {
+    height: Height!
+    timestamp: DateTime!
+    value: Int!
+}
+
+type Transfer @entity {
+    id: ID!
+    token: Currency!
+    amount: BigInt!
+    amountHuman: BigDecimal!
+    from: String! @index
+    to: String! @index
+    height: Height!
+    timestamp: DateTime!
+}
+
+type LoanMarket @entity {
+    id: ID!
+    token: Currency!
+    height: Height!
+    timestamp: DateTime!
+    borrowCap: BigInt!
+    supplyCap: BigInt!
+    rateModel: RateModel!
+    closeFactor: Int!
+    lendTokenId: Int! @unique
+    state: MarketState!
+    reserveFactor: Int!
+    collateralFactor: Int!
+    liquidateIncentive: BigInt!
+    liquidationThreshold: Int!
+    liquidateIncentiveReservedFactor: Int!
+    activation: LoanMarketActivation @derivedFrom(field: "market")
+    currencySymbol: String!
+
+}
+
+type LoanMarketActivation @entity {
+    id: ID!
+    market: LoanMarket! @unique
+    token: Currency!
+    height: Height!
+    timestamp: DateTime!
+}
+
+type Loan @entity {
+    id: ID!
+    token: Currency!
+    userParachainAddress: String!
+    amountBorrowed: BigInt
+    amountBorrowedUsdt: Float
+    amountBorrowedBtc: Float
+    amountRepaid: BigInt
+    amountRepaidUsdt: Float
+    amountRepaidBtc: Float
+    height: Height!
+    timestamp: DateTime!
+    comment: String
+    currencySymbol: String!
+}
+
+type Deposit @entity {
+    id: ID!
+    token: Currency!
+    symbol: String!
+    userParachainAddress: String!
+    type: String!
+    amountDeposited: BigInt
+    amountDepositedUsdt: Float
+    amountDepositedBtc: Float
+    amountWithdrawn: BigInt
+    amountWithdrawnUsdt: Float
+    amountWithdrawnBtc: Float
+    height: Height!
+    timestamp: DateTime!
+    comment: String
+    currencySymbol: String!
+}
+
+type InterestAccrual @entity {
+    id: ID!
+    underlyingCurrency: Currency!
+    currencySymbol: String!
+    utilizationRatio: Float!
+    borrowRate: BigInt!
+    supplyRate: BigInt!
+    totalBorrows: BigInt!
+    totalReserves: BigInt!
+    borrowIndex: BigInt!
+    totalBorrowsNative: Float
+    totalReservesNative: Float
+    borrowIndexNative: Float
+    totalBorrowsUsdt: Float
+    totalReservesUsdt: Float
+    borrowIndexUsdt: Float
+    borrowRatePct: Float
+    supplyRatePct: Float
+    exchangeRate: BigInt!
+    exchangeRateFloat: Float!
+    height: Height!
+    timestamp: DateTime!
+    comment: String
+}
+
+type Swap @entity {
+    id: ID!
+    height: Height!
+    timestamp: DateTime!
+    fromAccount: String! @index
+    toAccount: String!
+    fees: PooledAmount!
+    feeRate: BigDecimal!
+    from: PooledAmount!
+    to: PooledAmount!
+}
+
+type DexStableFees @entity {
+    id: ID!
+    poolId: BigInt! @index
+    timestamp: DateTime!
+    fee: BigInt!
+    adminFee: BigInt
+}
+
+enum LiquidityProvisionType {
+    DEPOSIT,
+    WITHDRAWAL
+}
+
+type AccountLiquidityProvision @entity {
+    id: ID!
+    height: Height!
+    timestamp: DateTime! @index
+    amounts: [PooledAmount!]!
+    accountId: String! @index
+    type: LiquidityProvisionType! @index
+}

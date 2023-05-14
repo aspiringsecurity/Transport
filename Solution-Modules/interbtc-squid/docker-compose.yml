@@ -1,0 +1,62 @@
+version: "3.4"
+
+services:
+  db-kintsugi:
+    image: postgres:12
+    restart: always
+    ports:
+      - "127.0.0.1:5434:5432"
+    volumes:
+      - /var/lib/postgresql/data_kint
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASS}
+      POSTGRES_DB: ${DB_NAME}
+
+  db-interlay:
+    image: postgres:12
+    restart: always
+    ports:
+      - "127.0.0.1:5435:5432"
+    volumes:
+      - /var/lib/postgresql/data_intr
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASS}
+      POSTGRES_DB: ${DB_NAME}
+
+  db-kintsugi-testnet:
+    image: postgres:12
+    restart: always
+    ports:
+      - "127.0.0.1:5433:5432"
+    volumes:
+      - /var/lib/postgresql/data_test_kint
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASS}
+      POSTGRES_DB: ${DB_NAME}
+
+  db-interlay-testnet:
+    image: postgres:12
+    restart: always
+    ports:
+      - "127.0.0.1:5436:5432"
+    volumes:
+      - /var/lib/postgresql/data_test_intr
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASS}
+      POSTGRES_DB: ${DB_NAME}
+
+  db:
+    image: postgres:12
+    restart: always
+    ports:
+      - "127.0.0.1:5433:5432"
+    volumes:
+      - /var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASS}
+      POSTGRES_DB: ${DB_NAME}

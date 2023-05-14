@@ -1,0 +1,9 @@
+.chglog
+.git
+.github
+.husky
+.storybook
+/api
+/build
+/node_modules
+/public

@@ -1,0 +1,149 @@
+version: '3.8'
+services:
+  interbtc:
+    image: "interlayhq/interbtc:interbtc-standalone-1.7.1"
+    command:
+      - interbtc-standalone
+      - --rpc-external
+      - --ws-external
+      - --rpc-methods
+      - Unsafe
+      - --dev
+    ports:
+      - '9933:9933'
+      - '9944:9944'
+  bitcoind:
+    image: 'ruimarinho/bitcoin-core:0.21'
+    command:
+      - -regtest
+      - -server
+      - -rpcbind=0.0.0.0
+      - -rpcallowip=0.0.0.0/0
+      - -rpcuser=rpcuser
+      - -rpcpassword=rpcpassword
+      - -fallbackfee=0.0002
+    ports:
+      - '18443:18443'
+  bitcoin_cli:
+    image: 'ruimarinho/bitcoin-core:0.21'
+    command:
+      - /bin/sh
+      - -c
+      - |
+        bitcoin-cli -regtest -rpcconnect=bitcoind -rpcwait -rpcuser=rpcuser -rpcpassword=rpcpassword createwallet Alice
+        bitcoin-cli -regtest -rpcconnect=bitcoind -rpcwait -rpcuser=rpcuser -rpcpassword=rpcpassword createwallet Bob
+        bitcoin-cli -regtest -rpcconnect=bitcoind -rpcwait -rpcuser=rpcuser -rpcpassword=rpcpassword createwallet Dave
+        bitcoin-cli -regtest -rpcconnect=bitcoind -rpcwait -rpcuser=rpcuser -rpcpassword=rpcpassword loadwallet Alice
+        bitcoin-cli -regtest -rpcconnect=bitcoind -rpcwait -rpcuser=rpcuser -rpcpassword=rpcpassword loadwallet Bob
+        bitcoin-cli -regtest -rpcconnect=bitcoind -rpcwait -rpcuser=rpcuser -rpcpassword=rpcpassword loadwallet Dave
+        ALICE_ADDRESS=$$(bitcoin-cli -regtest -rpcconnect=bitcoind -rpcwait -rpcuser=rpcuser -rpcpassword=rpcpassword -rpcwallet=Alice getnewaddress)
+        # coins need 100 confirmations to be spendable
+        bitcoin-cli -regtest -rpcconnect=bitcoind -rpcwait -rpcuser=rpcuser -rpcpassword=rpcpassword generatetoaddress 101 $${ALICE_ADDRESS}
+  electrs:
+    image: 'interlayhq/electrs:latest'
+    command:
+      - electrs
+      - -v
+      - --network
+      - regtest
+      - --jsonrpc-import
+      - --cors
+      - '*'
+      - --cookie
+      - 'rpcuser:rpcpassword'
+      - --daemon-rpc-addr
+      - bitcoind:18443
+      - --http-addr
+      - '[::0]:3002'
+      - --index-unspendables
+    ports:
+      - '3002:3002'
+  oracle:
+    image: "interlayhq/interbtc-clients:oracle-standalone-metadata-1-5-6"
+    command:
+      - oracle-standalone-metadata
+      - --keyring
+      - charlie
+      - --btc-parachain-url
+      - 'ws://interbtc:9944'
+      - --currency-id
+      - ${DOCKER_RELAY_CHAIN_CURRENCY}
+      - --coingecko
+      - "https://api.coingecko.com/api/v3/"
+      - --blockstream
+      - "https://blockstream.info/testnet/api/"
+    environment:
+        RUST_LOG: info
+    environment:
+      RUST_LOG: info
+    restart: unless-stopped
+  faucet:
+    image: "interlayhq/interbtc-clients:faucet-standalone-metadata-1-5-6"
+    command:
+        - /bin/sh
+        - -c
+        - |
+            echo '{"bob_stash": "0x1a7d114100653850c65edecda8a9b2b4dd65d900edef8e70b1a6ecdcda967056"}' > keyfile.json
+            faucet-standalone-metadata --keyfile="keyfile.json" --keyname=bob_stash --btc-parachain-url 'ws://interbtc:9944' --user-allowance 1 --vault-allowance 500 --http-addr '[::0]:3035' --native-currency-id 'INTR'
+    environment:
+      RUST_LOG: info
+    ports:
+      - '3035:3035'
+    restart: unless-stopped
+  vault:
+    image: "interlayhq/interbtc-clients:vault-standalone-metadata-1-5-6"
+    command:
+      - /bin/sh
+      - -c
+      - |
+          # charlie_stash
+          echo '{"vault_1": "0x66256c4e2f90e273bf387923a9a7860f2e9f47a1848d6263de512f7fb110fc08"}' > keyfile.json
+          echo "Sleeping..."
+          # sleep for 30s to wait for bitcoin to create the Charlie wallet
+          # and also to ensure that the issue period and redeem period are set
+          sleep 30
+          vault-standalone-metadata --keyfile="keyfile.json" --keyname="vault_1" --auto-register-with-collateral 1000000000000 --btc-parachain-url 'ws://interbtc:9944' --collateral-currency-id ${DOCKER_RELAY_CHAIN_CURRENCY} --wrapped-currency-id 'INTERBTC' --bitcoin-relay-start-height 1
+    environment: &client-env
+      BITCOIN_RPC_URL: http://bitcoind:18443
+      BITCOIN_RPC_USER: rpcuser
+      BITCOIN_RPC_PASS: rpcpassword
+      RUST_LOG: info
+    restart: unless-stopped
+  postgres:
+    image: 'postgres:13'
+    environment:
+      POSTGRES_USER: 'user'
+      POSTGRES_PASSWORD: 'password'
+    ports:
+      - '5432:5432'
+  flyway:
+    image: 'flyway/flyway:7'
+    command: 'migrate'
+    environment:
+      FLYWAY_USER: 'user'
+      FLYWAY_PASSWORD: 'password'
+      FLYWAY_URL: 'jdbc:postgresql://postgres:5432/postgres'
+    volumes:
+      - ${PWD}/node_modules/@interlay/interbtc-index-client/sql:/flyway/sql
+    depends_on:
+      - postgres
+  index:
+    image: 'registry.gitlab.com/interlay/polkabtc-stats:1.5.0'
+    restart: always
+    depends_on:
+      - postgres
+      - flyway
+    command: bash -c 'while !</dev/tcp/postgres/5432; do sleep 1; done; yarn start'
+    environment:
+      MONITOR: '1'
+      LOG_PRETTY_PRINT: '1'
+      SYNC_DB_SCHEMA: '1'
+      ENDPOINT_URL: 'ws://interbtc:9944'
+      BTC_NETWORK: 'http://electrs:3002'
+      PGHOST: 'postgres'
+      PGPORT: '5432'
+      PGDATABASE: 'postgres'
+      PGUSER: 'user'
+      PGPASSWORD: 'password'
+    ports:
+      - '3007:3007'

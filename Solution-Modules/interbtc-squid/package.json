@@ -1,0 +1,59 @@
+{
+    "name": "interbtc-indexer",
+    "private": "true",
+    "version": "0.15.3",
+    "description": "GraphQL server and Substrate indexer for the interBTC parachain",
+    "author": "",
+    "license": "ISC",
+    "scripts": {
+        "build": "rm -rf lib && tsc",
+        "gen:json": "node indexer/generateTypes.js",
+        "gen:explore:interlay": "squid-substrate-metadata-explorer --chain wss://api.interlay.io/parachain --archive https://interlay.archive.subsquid.io/graphql --out indexer/interlay.chainVersions.jsonl",
+        "gen:explore:kintsugi": "squid-substrate-metadata-explorer --chain wss://api-kusama.interlay.io/parachain --archive https://kintsugi.archive.subsquid.io/graphql --out indexer/kintsugi.chainVersions.jsonl",
+        "gen:explore:testnet": "squid-substrate-metadata-explorer --chain wss://api-testnet.interlay.io/parachain --archive https://api-testnet.interlay.io/subsquid-explorer/graphql --out indexer/testnet.chainVersions.jsonl",
+        "gen:explore:kintnet": "squid-substrate-metadata-explorer --chain wss://api-dev-kintsugi.interlay.io/parachain --archive https://api-dev-kintsugi.interlay.io/subsquid-explorer/graphql --out indexer/kintnet.chainVersions.jsonl",
+        "gen:explore:localtest": "squid-substrate-metadata-explorer --chain ws://127.0.0.1:9944 --out indexer/localtest.chainVersions.jsonl",
+        "gen:types:interlay": "squid-substrate-typegen interlay.typegen.json",
+        "gen:types:kintsugi": "squid-substrate-typegen kintsugi.typegen.json",
+        "gen:types:testnet": "squid-substrate-typegen testnet.typegen.json",
+        "gen:types:combined": "squid-substrate-typegen combined.typegen.json",
+        "gen:code": "squid-typeorm-codegen",
+        "db:create-migration": "squid-typeorm-migration generate",
+        "db:migrate": "squid-typeorm-migration apply",
+        "processor:start": "node -r dotenv/config lib/processor.js",
+        "query-node:start": "squid-graphql-server"
+    },
+    "dependencies": {
+        "@interlay/interbtc-api": "2.0.0",
+        "@interlay/interbtc-types": "1.1.1",
+        "@polkadot/util-crypto": "^10.2.3",
+        "@subsquid/archive-registry": "^1.0.12",
+        "@subsquid/big-decimal": "^0.0.0",
+        "@subsquid/graphql-server": "^3.3.0",
+        "@subsquid/ss58": "^0.1.0",
+        "@subsquid/substrate-processor": "^2.0.2",
+        "@subsquid/typeorm-codegen": "0.3.0",
+        "@subsquid/typeorm-migration": "^0.1.4",
+        "@subsquid/typeorm-store": "^0.1.5",
+        "bitcoinjs-lib": "^5.2.0",
+        "dotenv": "^10.0.0",
+        "lodash": "^4.17.21",
+        "pg": "^8.8.0",
+        "typeorm": "^0.3.9"
+    },
+    "devDependencies": {
+        "@interlay/interbtc-types": "1.1.1",
+        "@subsquid/cli": "^0.7.4",
+        "@subsquid/substrate-metadata-explorer": "^1.0.9",
+        "@subsquid/substrate-typegen": "^1.5.1",
+        "@types/debug": "^4.1.7",
+        "@types/lodash": "^4.14.191",
+        "@types/node": "^16.11.2",
+        "prettier": "^2.0.5",
+        "typescript": "^4.9.5"
+    },
+    "prettier": {
+        "singleQuote": false,
+        "tabWidth": 4
+    }
+}
