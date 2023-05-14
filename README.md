@@ -95,6 +95,20 @@ WASM smart contract for decentralized Transport Incident Management: We are deve
 Experiments with pallet assets chain extension: https://github.com/aspiringsecurity/Transport/tree/main/pallet-assets-chain-extension
 
 
+# Polkadot eco-system and tools
+
+Subsocial plugins
+
+Interlay 
+
+Subsquid
+
+Bifrost
+
+Acala
+
+
+
 # Intel one API specific instructions
 
 1. Intel oneapi powered analytics, navigation and inspection using UAVs and drones using NXP iot modular gateway: We are extending the example of navigation and inspection using drones to enable local air traffic control,  detecting and managing drones and setting up geo-fences, communication setup for drones using predictive analytics and automation. Please visit: https://github.com/aspiringsecurity/Transport/tree/main/roadincidentmanagement/transport-intel-oneapi-analytics/incident-oneapi-analytics-navigation-inspection 
