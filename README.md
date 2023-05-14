@@ -1,4 +1,4 @@
-# Transport DAO
+# Transport Intel
 
 Technical solution for security and monitoring road incidents using Polkadot, Intel one API toolkit, Ethereum, IPFS and OSS AI models; enable early detection and prevention of accidents.
 
