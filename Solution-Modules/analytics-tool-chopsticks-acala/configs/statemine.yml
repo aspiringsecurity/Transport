@@ -1,0 +1,17 @@
+endpoint: wss://statemine-rpc.polkadot.io
+mock-signature-host: true
+block: ${env.STATEMINE_BLOCK_NUMBER}
+db: ./db.sqlite
+
+import-storage:
+  System:
+    Account:
+      -
+        -
+          - 5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY
+        - data:
+            free: 1000000000000000
+  Assets:
+    Account:
+      - [[1984, 5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY], { balance: 1000000000 }]
+

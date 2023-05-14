@@ -1,0 +1,27 @@
+{
+	"compilerOptions": {
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"lib": ["esnext"],
+		"module": "CommonJS",
+		"moduleResolution": "node",
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noImplicitAny": false,
+		"target": "esnext",
+		"skipLibCheck": true,
+		"strict": true,
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"declaration": true,
+		"resolveJsonModule": true,
+		"baseUrl": ".",
+		"composite": true,
+		"paths": {
+			"@acala-network/chopsticks": ["packages/chopsticks/src"],
+			"@acala-network/chopsticks/*": ["packages/chopsticks/src/*"],
+			"@acala-network/chopsticks-testing": ["packages/testing/src"],
+			"@acala-network/chopsticks-testing/*": ["packages/testing/src/*"]
+		}
+	}
+}

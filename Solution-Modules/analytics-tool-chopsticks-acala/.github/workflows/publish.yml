@@ -1,0 +1,68 @@
+name: Publish
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        submodules: recursive
+    - uses: actions/cache@v3
+      with:
+        path: |
+          ~/.cargo/bin/
+          ~/.cargo/registry/index/
+          ~/.cargo/registry/cache/
+          ~/.cargo/git/db/
+          executor/target/
+        key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
+    - name: Install toolchain
+      uses: dtolnay/rust-toolchain@nightly
+      with:
+        toolchain: nightly-2022-10-30
+        components: rustfmt
+        target: wasm32-unknown-unknown
+    - name: Use Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 18.x
+        cache: 'yarn'
+        registry-url: https://registry.npmjs.org/
+    - run: yarn --immutable
+    - run: yarn check
+    - run: yarn build-wasm
+    - run: yarn build
+
+    # Make sure chopsticks and executor version are the same
+    - run: node -e "assert(require('./packages/chopsticks/package.json').version === require('./executor/pkg/package.json').version, 'Chopsticks and executor version not the same. Please update Cargo.toml version')"
+
+    # Writes token to .yarnrc.yml. If written directly in .yarnrc.yml, it will cause an error
+    - run: |
+        echo npmAuthToken: "\${NPM_AUTH_TOKEN}" >> ./.yarnrc.yml
+
+    - name: Publish @acala-network/chopsticks
+      run: yarn workspace @acala-network/chopsticks npm publish --tolerate-republish --access public
+      env:
+        NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+
+    # - name: Publish @acala-network/chopsticks-core
+    #   run: yarn workspace @acala-network/chopsticks-core npm publish --tolerate-republish --access public
+    #   env:
+    #     NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+
+    - name: Publish @acala-network/chopsticks-executor
+      run: yarn workspace @acala-network/chopsticks-executor npm publish --tolerate-republish --access public
+      env:
+        NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+
+    - name: Publish @acala-network/chopsticks-testing
+      run: yarn workspace @acala-network/chopsticks-testing npm publish --tolerate-republish --access public
+      env:
+        NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+
+    - run: |
+        git checkout ./.yarnrc.yml
