@@ -4,11 +4,9 @@ Technical solution for security and monitoring road incidents using Polkadot, In
 
 Goal: Ensure effective design, engineering and delivery of a decentralized intelligent solution to make roads safer and better using Polkadot, Intel one API toolkit, Ethereum, IPFS and OSS AI.
 
-Screencast: https://www.youtube.com/watch?v=_goh4_VBYPE&t=6s
-
 Website: https://sites.google.com/view/transport-intel/home?authuser=1
 
-Demo with Sound: https://www.youtube.com/watch?v=tvSQ2EMqH5s
+Demos, Pitch Deck and Supporting Materials: https://drive.google.com/drive/folders/1pke6_VQb9Zco8-WllI3n41xTrLTWjFQ4
 
 
 # Description
@@ -67,7 +65,7 @@ Traffic Management Architecture using UAVs: https://sites.google.com/view/transp
 We are using DAOtooling for coordination with a social focus around community collaboration for road incidents and alarms.
 
 
-Business Plan: https://drive.google.com/drive/u/4/folders/1_TjtuHxLzK-XnkRNszDnNncjo14Cui0M
+Business Plan: https://drive.google.com/drive/folders/1pke6_VQb9Zco8-WllI3n41xTrLTWjFQ4
 
 
 # Key Features
