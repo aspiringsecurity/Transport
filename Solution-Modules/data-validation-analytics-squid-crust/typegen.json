@@ -1,0 +1,11 @@
+{
+  "outDir": "src/types",
+  "specVersions": "https://crust.archive.subsquid.io/graphql",
+  "typesBundle": "crustTypesBundle.json",
+  "events": [
+    "Swork.WorksReportSuccess",
+    "Swork.JoinGroupSuccess",
+    "Market.FileSuccess"
+  ],
+  "calls": []
+}
