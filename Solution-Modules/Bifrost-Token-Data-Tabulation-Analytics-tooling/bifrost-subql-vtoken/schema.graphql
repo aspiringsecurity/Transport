@@ -1,0 +1,274 @@
+type StarterEntity @entity {
+
+  id: ID! #id is a required field
+
+  field1: Int!
+
+  field2: String #filed2 is an optional field
+
+  field3: BigInt
+
+  field4: Date
+
+
+}
+
+type AssetsToken @entity {
+  id: ID!
+  symbol: String
+  precision: Int
+  total_supply: BigInt
+  token_type: String
+  # pair: String[]
+}
+
+type TransactionDayData @entity{
+  id: ID! # tokenSymbol + '@' + dailyTimestamp
+  tokenSymbol: String
+  time: Date
+  transferCount: BigInt # 每日transfer总次数
+  transferAmount: BigInt # 每日交易总金额，每日该tokenSymbol所有transfer的balance相加
+  issueCount: BigInt
+  issueAmount: BigInt
+  burnCount: BigInt
+  burnAmount: BigInt
+  # token: [assetsToken] @deriveFrom(field: "id") 嵌套暂未实现 https://github.com/OnFinality-io/subql/issues/185
+}
+
+type Transaction @entity{
+  id: ID! # blockHeight + '-' + eventId
+  blockHeight: BigInt
+  eventId: Int
+  extrinsicId: Int # Extrinsic Id 即 txId
+  tokenSymbol: String
+  time: Date
+  from: String
+  to: String
+  amount: BigInt
+  type: String
+}
+
+# type assetsTransferredPrice @entity{
+#   id: ID! # tokenSymbol + '@' + dailyTimestamp
+#   price: BigInt # 每日最新价格，每出一个块都会更新，最终停止更新于当日最后一个块出块时的price
+# }
+
+# type dailyMintPrice @entity {
+#   id: ID! # assetId + '@' + dailyTimestamp
+#   mintPrice: BigInt
+#   vtokenPool: BigInt
+#   tokenPool: BigInt
+# }
+
+type MktPriceDayData @entity{
+  id: ID!
+  blockHeight: BigInt
+  currencyId: String
+  baseCurrencyId: String
+  time: Date
+  price: BigInt
+}
+
+type MintPriceDayData @entity{
+  id: ID!
+  blockHeight: BigInt
+  currencyId: String
+  pool: BigInt
+  time: Date
+  price: BigInt
+}
+
+type Apr @entity{
+  id: ID!  # currencyId
+  blockHeight: BigInt
+  apr: BigInt
+  time: Date
+}
+
+type Revenue @entity{
+  id: ID!  # currencyId
+  blockHeight: BigInt
+  revenue: BigInt
+  time: Date
+}
+
+type ZenlinkInfo @entity {
+  id: ID!
+  block_height: BigInt!
+  block_timestamp: Date!
+  method: String!
+  data: String!
+}
+
+type ZenlinkLiquidityCalculation @entity {
+  id: ID!
+  block_height: BigInt!
+  block_timestamp: Date!
+  event_id: Int
+  extrinsic_id: Int
+  owner: String
+  recipient: String
+  asset_0: String
+  asset_1: String
+  balance_in: BigInt
+  balance_out: BigInt
+  add_balance_0: BigInt
+  add_balance_1: BigInt
+  mint_balance_lp: BigInt
+  rm_balance_0: BigInt
+  rm_balance_1: BigInt
+  burn_balance_lp: BigInt
+}
+
+type VsbondInfo @entity {
+  id: ID!
+  block_height: BigInt!
+  block_timestamp: Date!
+  method: String!
+  data: String!
+}
+
+type SalpInfo @entity {
+  id: ID!
+  blockHeight: BigInt!
+  method: String!
+  accountIdOf: String
+  paraId: String
+  balanceOf: BigInt
+  data: String!
+}
+
+type SalpContributed @entity {
+  id: ID!
+  block_height: Int!
+  event_id: Int!
+  extrinsic_id: Int!
+  block_timestamp: Date!
+  account: String
+  para_id: Int
+  balance: BigInt
+  message_id: String
+}
+
+# type SalpContributeFailed @entity {
+#   id: ID!
+#   blockHeight: BigInt!
+#   accountIdOf: String!
+#   paraId: String!
+#   balanceOf: BigInt!
+# }
+
+# type SalpWithdrew @entity {
+#   id: ID!
+#   blockHeight: BigInt!
+#   accountIdOf: String!
+#   paraId: String!
+#   balanceOf: BigInt!
+# }
+
+# type SalpWithdrawFailed @entity {
+#   id: ID!
+#   blockHeight: BigInt!
+#   accountIdOf: String!
+#   paraId: String!
+#   balanceOf: BigInt!
+# }
+
+# type SalpRedeemed @entity {
+#   id: ID!
+#   blockHeight: BigInt!
+#   accountIdOf: String!
+#   balanceOf: BigInt!
+# }
+
+# type SalpRedeemFailed @entity {
+#   id: ID!
+#   blockHeight: BigInt!
+#   accountIdOf: String!
+#   balanceOf: BigInt!
+# }
+
+type SalpContribution @entity {
+  id: ID!
+  block_height: Int!
+  block_timestamp: Date!
+  method: String!
+  account: String
+  para_id: Int
+  balance: BigInt
+  message_id: String
+}
+
+type SalpRefunded @entity {
+  id: ID!
+  event_id: Int!
+  extrinsic_id: Int!
+  block_height: Int!
+  block_timestamp: Date!
+  method: String!
+  account: String
+  para_id: Int
+  balance: BigInt
+}
+
+type XtokensTransferred @entity {
+  id: ID!
+  event_id: Int!
+  extrinsic_id: Int
+  block_height: Int!
+  block_timestamp: Date!
+  account: String
+  currency: String
+  balance: BigInt
+  multilocation: String
+}
+
+# type CurrenciesDeposited @entity {
+#   id: ID!
+#   event_id: Int!
+#   extrinsic_id: Int!
+#   block_height: Int!
+#   block_timestamp: Date!
+#   account: String
+#   currency: String
+#   balance: BigInt
+# }
+
+# type BalancesTransfer @entity {
+#   id: ID!
+#   event_id: Int!
+#   extrinsic_id: Int
+#   block_height: Int!
+#   block_timestamp: Date!
+#   from: String
+#   to: String
+#   balance: BigInt
+# }
+
+type TotalTransfer @entity {
+  id: ID!
+  event_id: Int!
+  extrinsic_id: Int
+  block_height: Int!
+  block_timestamp: Date!
+  section: String
+  method: String
+  from: String
+  to: String
+  currency: String
+  balance: BigInt
+}
+
+
+type Vesting @entity {
+  id: ID!
+  event_id: Int!
+  extrinsic_id: Int
+  block_height: Int!
+  block_timestamp: Date!
+  section: String
+  method: String
+  account: String
+  currency: String
+  balance: BigInt
+}

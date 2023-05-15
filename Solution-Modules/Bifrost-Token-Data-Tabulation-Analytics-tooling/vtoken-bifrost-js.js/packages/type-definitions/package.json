@@ -1,0 +1,23 @@
+{
+  "name": "@bifrost-finance/type-definitions",
+  "version": "1.7.2",
+  "description": "Polkadot.js type definations for Acala Network",
+  "main": "index.js",
+  "author": "Edwin Wang <lark930@gmail.com>",
+  "license": "Apache-2.0",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bifrost-finance/bifrost.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bifrost-finance/bifrost.js/issues"
+  },
+  "homepage": "https://github.com/bifrost-finance/bifrost.js/tree/master/packages/api#readme",
+  "dependencies": {
+    "@open-web3/orml-type-definitions": "^0.9.4-38"
+  }
+}

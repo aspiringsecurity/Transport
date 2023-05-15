@@ -1,0 +1,31 @@
+{
+  "name": "xcm-action-contracts",
+  "version": "0.1.0",
+  "description": "Xcm action contracts to do xcm call to Bifrost's xcm-action pallet",
+  "keywords": [
+    "bifrost",
+    "astar",
+    "moonbeam",
+    "xcm-action",
+    "xcm-transactor",
+    "xtokens"
+  ],
+  "homepage": "https://github.com/bifrost-finance/xcm-action-contracts#readme",
+  "bugs": {
+    "url": "https://github.com/bifrost-finance/xcm-action-contracts/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bifrost-finance/xcm-action-contracts.git"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "@nomiclabs/hardhat-ethers": "^2.2.2",
+    "@openzeppelin/contracts": "^4.8.2",
+    "@polkadot/api": "^10.2.2",
+    "dotenv": "^16.0.3",
+    "hardhat": "^2.13.0"
+  }
+}

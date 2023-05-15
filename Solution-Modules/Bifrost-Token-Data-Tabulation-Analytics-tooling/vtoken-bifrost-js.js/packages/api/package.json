@@ -1,0 +1,34 @@
+{
+  "name": "@bifrost-finance/api",
+  "version": "1.7.2",
+  "description": "Promise and RxJS wrappers around the Bifrost JS RPC",
+  "main": "index.js",
+  "keywords": [
+    "Polkadot",
+    "Bifrost",
+    "RxJs"
+  ],
+  "author": "Edwin Wang <lark930@gmail.com>",
+  "maintainers": [
+    "Edwin Wang <lark930@gmail.com>"
+  ],
+  "contributors": [],
+  "license": "Apache-2.0",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bifrost-finance/bifrost.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bifrost-finance/bifrost.js/issues"
+  },
+  "homepage": "https://github.com/bifrost-finance/bifrost.js/tree/master/packages/api#readme",
+  "dependencies": {
+    "@babel/runtime": "^7.17.0",
+    "@bifrost-finance/types": "^1.7.2",
+    "@polkadot/api": "^7.6.1"
+  }
+}
