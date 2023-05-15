@@ -97,15 +97,19 @@ Experiments with pallet assets chain extension: https://github.com/aspiringsecur
 
 # Polkadot eco-system and tools
 
-Subsocial plugins
+Subsocial plugins - https://github.com/aspiringsecurity/Transport/tree/main/dapp-grillchat-subsocial-spreadsheet and https://github.com/aspiringsecurity/Transport/tree/main/dapp-road-counseling-subsocial
 
-Interlay 
+Interlay - https://github.com/aspiringsecurity/Transport/tree/main/Solution-Modules/data-dao-dapp-interbtc-kintsugi and https://github.com/aspiringsecurity/Transport/tree/main/Solution-Modules/interbtc-squid
 
-Subsquid
+Subsquid - https://github.com/aspiringsecurity/Transport/tree/main/Solution-Modules/data-validation-analytics-squid-crust
 
-Bifrost
+Wasm dapp: https://github.com/aspiringsecurity/Transport/tree/main/wasm-transport-dao
 
-Acala
+Bifrost - https://github.com/aspiringsecurity/Transport/tree/main/Solution-Modules/Bifrost-Token-Data-Tabulation-Analytics-tooling
+
+Acala dapp challenge - https://github.com/aspiringsecurity/Transport/tree/main/Solution-Modules/Spare_parts_NFT_Acala-EVM%2B
+
+Acala (Chopsticks challenge): https://github.com/aspiringsecurity/Transport/tree/main/Solution-Modules/analytics-tool-chopsticks-acala and 
 
 
 
