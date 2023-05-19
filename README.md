@@ -99,17 +99,18 @@ Experiments with pallet assets chain extension: https://github.com/aspiringsecur
 
 Subsocial plugins - https://github.com/aspiringsecurity/Transport/tree/main/dapp-grillchat-subsocial-spreadsheet and https://github.com/aspiringsecurity/Transport/tree/main/dapp-road-counseling-subsocial
 
-Interlay - https://github.com/aspiringsecurity/Transport/tree/main/Solution-Modules/data-dao-dapp-interbtc-kintsugi and https://github.com/aspiringsecurity/Transport/tree/main/Solution-Modules/interbtc-squid
+Interlay - Dapp for Bitcoin on Kintsugi for Transport Incident Management. integration with zkp and scrypt tools on bitcoin. Please visit: https://github.com/aspiringsecurity/Transport/tree/main/Solution-Modules/data-dao-dapp-interbtc-kintsugi and https://github.com/aspiringsecurity/Transport/tree/main/Solution-Modules/interbtc-squid
+Demo for wallet using zkp and scrypt tools on bitcoin at the google drive.
 
-Subsquid - https://github.com/aspiringsecurity/Transport/tree/main/Solution-Modules/data-validation-analytics-squid-crust
+Subsquid - Data validation tool using Subsquid. Please visit: https://github.com/aspiringsecurity/Transport/tree/main/Solution-Modules/data-validation-analytics-squid-crust
 
-Wasm dapp: https://github.com/aspiringsecurity/Transport/tree/main/wasm-transport-dao
+Wasm dapp: Dapp for Transport DAO (decentralized autonomous organization) using Wasm smart contracts. Please visit: https://github.com/aspiringsecurity/Transport/tree/main/wasm-transport-dao
 
-Bifrost - https://github.com/aspiringsecurity/Transport/tree/main/Solution-Modules/Bifrost-Token-Data-Tabulation-Analytics-tooling
+Bifrost - Dapp for vtokens and analytics tool for tabulation, organization and visualization: https://github.com/aspiringsecurity/Transport/tree/main/Solution-Modules/Bifrost-Token-Data-Tabulation-Analytics-tooling
 
-Acala dapp challenge - https://github.com/aspiringsecurity/Transport/tree/main/Solution-Modules/Spare_parts_NFT_Acala-EVM%2B
+Acala dapp challenge - Acala  dapp for NFT marketplace for spare parts. Please visit: https://github.com/aspiringsecurity/Transport/tree/main/Solution-Modules/Spare_parts_NFT_Acala-EVM%2B
 
-Acala (Chopsticks challenge): https://github.com/aspiringsecurity/Transport/tree/main/Solution-Modules/analytics-tool-chopsticks-acala and 
+Acala (Chopsticks challenge): Developer and Governance tooling with Chopsticks. Please visit: https://github.com/aspiringsecurity/Transport/tree/main/Solution-Modules/analytics-tool-chopsticks-acala and 
 
 
 
