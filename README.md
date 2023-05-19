@@ -97,7 +97,11 @@ Experiments with pallet assets chain extension: https://github.com/aspiringsecur
 
 # Polkadot eco-system and tools
 
-Subsocial plugins - https://github.com/aspiringsecurity/Transport/tree/main/dapp-grillchat-subsocial-spreadsheet and https://github.com/aspiringsecurity/Transport/tree/main/dapp-road-counseling-subsocial
+Subsocial plugins - Subsocial plugins with integration with an analytics tool for visualization, tabulation and organization of data: https://github.com/aspiringsecurity/Transport/tree/main/dapp-grillchat-subsocial-spreadsheet 
+Subsocial dapp module for road safety counselling
+https://github.com/aspiringsecurity/Transport/tree/main/dapp-road-counseling-subsocial
+Extension with Grill Chat.
+Demo for subsocial plugins available at https://drive.google.com/drive/folders/1pke6_VQb9Zco8-WllI3n41xTrLTWjFQ4
 
 Interlay - Dapp for Bitcoin on Kintsugi for Transport Incident Management. integration with zkp and scrypt tools on bitcoin. Please visit: https://github.com/aspiringsecurity/Transport/tree/main/Solution-Modules/data-dao-dapp-interbtc-kintsugi and https://github.com/aspiringsecurity/Transport/tree/main/Solution-Modules/interbtc-squid
 Demo for wallet using zkp and scrypt tools on bitcoin at the google drive. Demo at https://drive.google.com/drive/folders/1pke6_VQb9Zco8-WllI3n41xTrLTWjFQ4
