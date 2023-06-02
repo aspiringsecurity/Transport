@@ -88,6 +88,8 @@ Business Plan: https://drive.google.com/drive/folders/1pke6_VQb9Zco8-WllI3n41xTr
 
 - Theta User Analytics for tabulation, organization and validation
 
+- Theta MetaChain implementation
+
 - Theta User Security for 5 dapp personas
 
 - Theta Incident System Management
