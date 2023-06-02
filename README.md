@@ -6,8 +6,6 @@ Goal: Ensure effective design, engineering and delivery of a decentralized intel
 
 Website: https://sites.google.com/view/transport-intel/
 
-Demos, Pitch Deck and Supporting Materials: https://drive.google.com/drive/folders/1pke6_VQb9Zco8-WllI3n41xTrLTWjFQ4
-
 
 # Description
 
