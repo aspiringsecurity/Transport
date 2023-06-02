@@ -1,10 +1,10 @@
 # Transport Intel
 
-Technical solution for security and monitoring road incidents using Polkadot, Intel one API toolkit, Ethereum, IPFS and OSS AI models; enable early detection and prevention of accidents.
+Technical solution for security and monitoring road incidents using Theta Blockchain, Polkadot, Intel one API toolkit, Ethereum, IPFS and OSS AI models; enable early detection and prevention of accidents.
 
 Goal: Ensure effective design, engineering and delivery of a decentralized intelligent solution to make roads safer and better using Polkadot, Intel one API toolkit, Ethereum, IPFS and OSS AI.
 
-Website: https://sites.google.com/view/transport-intel/home?authuser=1
+Website: https://sites.google.com/view/transport-intel/
 
 Demos, Pitch Deck and Supporting Materials: https://drive.google.com/drive/folders/1pke6_VQb9Zco8-WllI3n41xTrLTWjFQ4
 
@@ -51,7 +51,7 @@ Alarm Viewer and Notifier:
 3. You can also delete an existing alarm.
 4. Data DAO for Monitoring, Incident Management, preserving vital data
 
-How the mobile version of the solution works?: https://sites.google.com/view/transport-intel/home/works?authuser=1
+How the mobile version of the solution works?: https://sites.google.com/view/transport-intel/
 
 
 # Architecture
@@ -81,6 +81,19 @@ Business Plan: https://drive.google.com/drive/folders/1pke6_VQb9Zco8-WllI3n41xTr
 
 
 # Technical Details
+
+# Theta Blockchain
+
+- SAP BTP platform integration with Theta Blockchain:
+
+- Theta Blockchain and SAP Enterprise ETL library
+
+- Theta User Analytics for tabulation, organization and validation
+
+- Theta User Security for 5 dapp personas
+
+- Theta Incident System Management
+
 
 # Polkadot, Ink Smart Contracts and Intel oneAPI toolkit 
 
