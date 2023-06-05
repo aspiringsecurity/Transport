@@ -95,43 +95,7 @@ Business Plan: https://drive.google.com/drive/folders/1pke6_VQb9Zco8-WllI3n41xTr
 - Theta Incident System Management
 
 
-# Polkadot, Ink Smart Contracts and Intel oneAPI toolkit 
-
-We are using Polkadot, Ink Smart Contracts and Intel oneAPI for solving multiple challenges in investigative case management of road incidents for the admin role: sentiment analysis of a particular road incident for the admin role, social media text mining for a road incident and classification and severity of the incidents, early stage incident response and prevention.   Website: https://sites.google.com/view/transport-intel/home?authuser=1
-
-Polkadot Analytics and Visualization Tool: https://github.com/aspiringsecurity/Transport/tree/main/dot-analytics-tooling
-
-Ink NFT viewer for viewing the NFTs of NFC tags of vehicles and service personnel: We are extending the Ink NFT viewer dapp for viewing the NFTs generated for the NFC tags of vehicles and service repair personnel at the incident sites. Please visit: https://github.com/aspiringsecurity/Transport/tree/main/ink-nft-viewer
-
-WASM smart contract for decentralized Transport Incident Management: We are developing smart contracts in wasm ink for decentralized Transport Incident Management, deploying on Shibuya, extending UI interaction with astar.js. Please visit https://github.com/aspiringsecurity/Transport/tree/main/wasm-transport-dao
-
-Experiments with pallet assets chain extension: https://github.com/aspiringsecurity/Transport/tree/main/pallet-assets-chain-extension
-
-
-# Polkadot eco-system and tools
-
-Subsquid - Data validation tool using Subsquid. Please visit: https://github.com/aspiringsecurity/Transport/tree/main/Solution-Modules/data-validation-analytics-squid-crust
-Demo at https://drive.google.com/drive/folders/1pke6_VQb9Zco8-WllI3n41xTrLTWjFQ4
-
-Subsocial plugins - Subsocial plugins with integration with an analytics tool for visualization, tabulation and organization of data: https://github.com/aspiringsecurity/Transport/tree/main/dapp-grillchat-subsocial-spreadsheet 
-Subsocial dapp module for road safety counselling
-https://github.com/aspiringsecurity/Transport/tree/main/dapp-road-counseling-subsocial
-Extension with Grill Chat.
-Demo for subsocial plugins available at https://drive.google.com/drive/folders/1pke6_VQb9Zco8-WllI3n41xTrLTWjFQ4
-
-Interlay - Dapp for Bitcoin on Kintsugi for Transport Incident Management. integration with zkp and scrypt tools on bitcoin. Please visit: https://github.com/aspiringsecurity/Transport/tree/main/Solution-Modules/data-dao-dapp-interbtc-kintsugi and https://github.com/aspiringsecurity/Transport/tree/main/Solution-Modules/interbtc-squid
-Demo for wallet using zkp and scrypt tools on bitcoin at the google drive. Demo at https://drive.google.com/drive/folders/1pke6_VQb9Zco8-WllI3n41xTrLTWjFQ4
-
-Wasm dapp: Dapp for Transport DAO (decentralized autonomous organization) using Wasm smart contracts. Please visit: https://github.com/aspiringsecurity/Transport/tree/main/wasm-transport-dao. Demo for the module at https://drive.google.com/drive/folders/1pke6_VQb9Zco8-WllI3n41xTrLTWjFQ4
-
-Bifrost - Dapp for vtokens and analytics tool for tabulation, organization and visualization: https://github.com/aspiringsecurity/Transport/tree/main/Solution-Modules/Bifrost-Token-Data-Tabulation-Analytics-tooling . Demo for the module at https://drive.google.com/drive/folders/1pke6_VQb9Zco8-WllI3n41xTrLTWjFQ4
-
-Acala dapp challenge - Acala  dapp for NFT marketplace for spare parts. Please visit: https://github.com/aspiringsecurity/Transport/tree/main/Solution-Modules/Spare_parts_NFT_Acala-EVM%2B
-Demo for dapp at https://drive.google.com/drive/folders/1pke6_VQb9Zco8-WllI3n41xTrLTWjFQ4
-
-Acala (Chopsticks challenge): Developer and Governance tooling with Chopsticks. Please visit: https://github.com/aspiringsecurity/Transport/tree/main/Solution-Modules/analytics-tool-chopsticks-acala . Demo for the challenge at https://drive.google.com/drive/folders/1pke6_VQb9Zco8-WllI3n41xTrLTWjFQ4
-
-
+# Hardware APIs and iot development
 
 # Intel one API specific instructions
 
@@ -154,5 +118,43 @@ Features:
 2. Intel oneapi Spare parts billing and automation using onchain/offchain payments: Please visit https://github.com/aspiringsecurity/Transport/tree/main/dot-analytics-tooling/transport-intel-oneapi-analytics/spare-parts-intel-oneapi-invoice-to-cash-automation
 
 We are extending the example of intel oneapi powered invoice to cash automation to develop an invoicing suite and Web3 Car Parts Dashboard that enables Transport Ministry and third party service and repair organizations to keep track of all the details of their transport assets, DeFi investments, transactions, and assets across all multiple chains and also displays DAO data using a data visualization chart. We are building our solution on top of an existing web3 dashboard system and wish to integrate an analytics, tabulation and collaboration tool namely EtherCalc.
+
+
+# Web3 Eco-system Tools
+
+- Polkadot, Ink Smart Contracts
+
+We are using Polkadot, Ink Smart Contracts and Intel oneAPI for solving multiple challenges in investigative case management of road incidents for the admin role: sentiment analysis of a particular road incident for the admin role, social media text mining for a road incident and classification and severity of the incidents, early stage incident response and prevention.   Website: https://sites.google.com/view/transport-intel/home?authuser=1
+
+Polkadot Analytics and Visualization Tool: https://github.com/aspiringsecurity/Transport/tree/main/dot-analytics-tooling
+
+Ink NFT viewer for viewing the NFTs of NFC tags of vehicles and service personnel: We are extending the Ink NFT viewer dapp for viewing the NFTs generated for the NFC tags of vehicles and service repair personnel at the incident sites. Please visit: https://github.com/aspiringsecurity/Transport/tree/main/ink-nft-viewer
+
+WASM smart contract for decentralized Transport Incident Management: We are developing smart contracts in wasm ink for decentralized Transport Incident Management, deploying on Shibuya, extending UI interaction with astar.js. Please visit https://github.com/aspiringsecurity/Transport/tree/main/wasm-transport-dao
+
+Experiments with pallet assets chain extension: https://github.com/aspiringsecurity/Transport/tree/main/pallet-assets-chain-extension
+
+- Polkadot eco-system and tools
+
+Subsquid - Data validation tool using Subsquid. Please visit: https://github.com/aspiringsecurity/Transport/tree/main/Solution-Modules/data-validation-analytics-squid-crust
+Demo at https://drive.google.com/drive/folders/1pke6_VQb9Zco8-WllI3n41xTrLTWjFQ4
+
+Subsocial plugins - Subsocial plugins with integration with an analytics tool for visualization, tabulation and organization of data: https://github.com/aspiringsecurity/Transport/tree/main/dapp-grillchat-subsocial-spreadsheet 
+Subsocial dapp module for road safety counselling
+https://github.com/aspiringsecurity/Transport/tree/main/dapp-road-counseling-subsocial
+Extension with Grill Chat.
+Demo for subsocial plugins available at https://drive.google.com/drive/folders/1pke6_VQb9Zco8-WllI3n41xTrLTWjFQ4
+
+Interlay - Dapp for Bitcoin on Kintsugi for Transport Incident Management. integration with zkp and scrypt tools on bitcoin. Please visit: https://github.com/aspiringsecurity/Transport/tree/main/Solution-Modules/data-dao-dapp-interbtc-kintsugi and https://github.com/aspiringsecurity/Transport/tree/main/Solution-Modules/interbtc-squid
+Demo for wallet using zkp and scrypt tools on bitcoin at the google drive. Demo at https://drive.google.com/drive/folders/1pke6_VQb9Zco8-WllI3n41xTrLTWjFQ4
+
+Wasm dapp: Dapp for Transport DAO (decentralized autonomous organization) using Wasm smart contracts. Please visit: https://github.com/aspiringsecurity/Transport/tree/main/wasm-transport-dao. Demo for the module at https://drive.google.com/drive/folders/1pke6_VQb9Zco8-WllI3n41xTrLTWjFQ4
+
+Bifrost - Dapp for vtokens and analytics tool for tabulation, organization and visualization: https://github.com/aspiringsecurity/Transport/tree/main/Solution-Modules/Bifrost-Token-Data-Tabulation-Analytics-tooling . Demo for the module at https://drive.google.com/drive/folders/1pke6_VQb9Zco8-WllI3n41xTrLTWjFQ4
+
+Acala dapp challenge - Acala  dapp for NFT marketplace for spare parts. Please visit: https://github.com/aspiringsecurity/Transport/tree/main/Solution-Modules/Spare_parts_NFT_Acala-EVM%2B
+Demo for dapp at https://drive.google.com/drive/folders/1pke6_VQb9Zco8-WllI3n41xTrLTWjFQ4
+
+Acala (Chopsticks challenge): Developer and Governance tooling with Chopsticks. Please visit: https://github.com/aspiringsecurity/Transport/tree/main/Solution-Modules/analytics-tool-chopsticks-acala . Demo for the challenge at https://drive.google.com/drive/folders/1pke6_VQb9Zco8-WllI3n41xTrLTWjFQ4
 
 
