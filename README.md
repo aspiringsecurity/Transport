@@ -2,17 +2,16 @@
 
 Technical solution for security and monitoring road incidents using Theta Blockchain and Theta Metachain, Intel one API toolkit, Ethereum, IPFS and OSS AI models; enable early detection and prevention of accidents.
 
-Goal: Ensure effective design, engineering and delivery of a decentralized intelligent solution to make roads safer and better Theta Blockchain and Metachain, Intel one API toolkit, Ethereum, IPFS and OSS AI.
+Goal: Ensure effective design, engineering and delivery of a decentralized intelligent solution to make roads safer and better Theta Blockchain and Theta Metachain, Intel one API toolkit, Ethereum, IPFS and OSS AI.
 
 Website: https://sites.google.com/view/transport-intel/
 
 
 # Description
 
+Our solution offers an Artificial Intelligence-based object detection system that utilizes Theta blockchain and Theta Metachain, Intel one API toolkit and ethereum blockchain solutions powered by IPFS storage for sorting information obtained from a variety of road junctions, cameras deployed at monitoring spots.
 
-Our solution offers an Artificial Intelligence-based object detection system that utilizes Polkadot, Ink, Intel one API toolkit and ethereum blockchain solutions powered by IPFS storage for sorting information obtained from a variety of road junctions, cameras deployed at monitoring spots.
-
-Our app solution will enable effective design, engineering and delivery of  Polkadot, Ink, Intel one API toolkit aided solution to make roads safer and better using predictive analytics and automation for incident reporting and reduction in hazardous transportation with capabilities pluggable and extendable to 5 different personas: Driver, Police, Citizen, Dispatcher, Admin. Our solution will benefit: 
+Our app solution will enable effective design, engineering and delivery of Theta Blockchain and Theta Metachain, Intel one API toolkit aided solution to make roads safer and better using predictive analytics and automation for incident reporting and reduction in hazardous transportation with capabilities pluggable and extendable to 5 different personas: Driver, Police, Citizen, Dispatcher, Admin. Our solution will benefit: 
 
 - Police Force 
 360 degrees access of the incidents to the action/ administration team. They can manage the complete lifecycle of incident reporting, overall status, traffic monitoring, managing police teams. Using machine learning they can also predict the incident occurrence at any area. This will help in taking necessary actions in advance to control the traffic. They can also use the solution for effective utilization of staff members and provide road safety counselling.
