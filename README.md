@@ -34,9 +34,9 @@ Our app solution will enable effective design, engineering and delivery of Theta
 # How it works?
 
 How it works:
-1. Camera Management: Add/edit/delete cameras using DAOs
+1. Camera Management: Add/edit/delete cameras using DAOs on Theta Blockchain
 2. Object Detection using Pytorch/Tensorflow deep learning library using CNN neural networks.
-3.  Video analytics configuration using DAOs
+3.  Video analytics configuration using DAOs on Theta Blockchain
 4. Live streaming with Object Detection Video Analytics
 5. Alarm storage. Save/delete alarm metadata and image to/from IPFS. Store the hash returned from IPFS and provide links to alarms and blockchain transaction details.
 6. Alarm Viewer: Add alarms with a single touch.
@@ -48,7 +48,7 @@ Alarm Viewer and Notifier:
 3. You can also delete an existing alarm.
 4. Data DAO for Monitoring, Incident Management, preserving vital data
 
-How the mobile version of the solution works?: https://sites.google.com/view/transport-intel/
+Website: https://sites.google.com/view/transport-intel/
 
 
 # Architecture
@@ -119,7 +119,7 @@ Features:
 We are extending the example of intel oneapi powered invoice to cash automation to develop an invoicing suite and Web3 Car Parts Dashboard that enables Transport Ministry and third party service and repair organizations to keep track of all the details of their transport assets, DeFi investments, transactions, and assets across all multiple chains and also displays DAO data using a data visualization chart. We are building our solution on top of an existing web3 dashboard system and wish to integrate an analytics, tabulation and collaboration tool namely EtherCalc.
 
 
-# Web3 Eco-system Tools
+# Supporting Web3 Eco-system Tools
 
 - Polkadot, Ink Smart Contracts
 
