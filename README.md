@@ -1,8 +1,8 @@
 # Theta Transport Intel
 
-Technical solution for security and monitoring road incidents using Theta Blockchain, Polkadot, Intel one API toolkit, Ethereum, IPFS and OSS AI models; enable early detection and prevention of accidents.
+Technical solution for security and monitoring road incidents using Theta Blockchain and Theta Metachain, Intel one API toolkit, Ethereum, IPFS and OSS AI models; enable early detection and prevention of accidents.
 
-Goal: Ensure effective design, engineering and delivery of a decentralized intelligent solution to make roads safer and better using Polkadot, Intel one API toolkit, Ethereum, IPFS and OSS AI.
+Goal: Ensure effective design, engineering and delivery of a decentralized intelligent solution to make roads safer and better Theta Blockchain and Metachain, Intel one API toolkit, Ethereum, IPFS and OSS AI.
 
 Website: https://sites.google.com/view/transport-intel/
 
