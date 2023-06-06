@@ -81,17 +81,17 @@ Business Plan: https://drive.google.com/drive/folders/1pke6_VQb9Zco8-WllI3n41xTr
 
 # Theta Blockchain
 
-- SAP BTP platform integration with Theta Blockchain:
+- SAP BTP platform integration with Theta Blockchain
 
-- Theta Blockchain and SAP Enterprise ETL library
+- Theta Blockchain and SAP Enterprise ETL library: Please visit https://github.com/aspiringsecurity/Transport/tree/main/Theta-Modules/theta-blockchain-UI5-Fiori-BTP
 
-- Theta User Analytics for tabulation, organization and validation
+- Theta User Analytics for tabulation, organization and validation: Please visit https://github.com/aspiringsecurity/Transport/tree/main/theta-analytics-tooling
 
-- Theta MetaChain implementation
+- Theta MetaChain implementation: Please visit https://github.com/aspiringsecurity/Transport/tree/main/Theta-Modules/theta-protocol-subchain-implementation
 
-- Theta User Security for 5 dapp personas
+- Theta User Security for 5 dapp personas: Please visit https://github.com/aspiringsecurity/Transport/tree/main/Theta-User-Security/Theta-User-Security
 
-- Theta Incident System Management
+- Theta Incident System Management: Please visit https://github.com/aspiringsecurity/Transport/tree/main/Theta-user-report-incidents-upload
 
 
 # Hardware APIs and iot development
