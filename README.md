@@ -1,20 +1,17 @@
-# Transport Intel
+# Theta Transport Intel
 
-Technical solution for security and monitoring road incidents using Polkadot, Intel one API toolkit, Ethereum, IPFS and OSS AI models; enable early detection and prevention of accidents.
+Technical solution for security and monitoring road incidents using Theta Blockchain and Theta Metachain, Intel one API toolkit, Ethereum, IPFS and OSS AI models; enable early detection and prevention of accidents.
 
-Goal: Ensure effective design, engineering and delivery of a decentralized intelligent solution to make roads safer and better using Polkadot, Intel one API toolkit, Ethereum, IPFS and OSS AI.
+Goal: Ensure effective design, engineering and delivery of a decentralized intelligent solution to make roads safer and better Theta Blockchain and Theta Metachain, Intel one API toolkit, Ethereum, IPFS and OSS AI.
 
-Website: https://sites.google.com/view/transport-intel/home?authuser=1
-
-Demos, Pitch Deck and Supporting Materials: https://drive.google.com/drive/folders/1pke6_VQb9Zco8-WllI3n41xTrLTWjFQ4
+Website: https://sites.google.com/view/transport-intel/
 
 
 # Description
 
+Our solution offers an Artificial Intelligence-based object detection system that utilizes Theta blockchain and Theta Metachain, Intel one API toolkit and ethereum blockchain solutions powered by IPFS storage for sorting information obtained from a variety of road junctions, cameras deployed at monitoring spots.
 
-Our solution offers an Artificial Intelligence-based object detection system that utilizes Polkadot, Ink, Intel one API toolkit and ethereum blockchain solutions powered by IPFS storage for sorting information obtained from a variety of road junctions, cameras deployed at monitoring spots.
-
-Our app solution will enable effective design, engineering and delivery of  Polkadot, Ink, Intel one API toolkit aided solution to make roads safer and better using predictive analytics and automation for incident reporting and reduction in hazardous transportation with capabilities pluggable and extendable to 5 different personas: Driver, Police, Citizen, Dispatcher, Admin. Our solution will benefit: 
+Our app solution will enable effective design, engineering and delivery of Theta Blockchain and Theta Metachain, Intel one API toolkit aided solution to make roads safer and better using predictive analytics and automation for incident reporting and reduction in hazardous transportation with capabilities pluggable and extendable to 5 different personas: Driver, Police, Citizen, Dispatcher, Admin. Our solution will benefit: 
 
 - Police Force 
 360 degrees access of the incidents to the action/ administration team. They can manage the complete lifecycle of incident reporting, overall status, traffic monitoring, managing police teams. Using machine learning they can also predict the incident occurrence at any area. This will help in taking necessary actions in advance to control the traffic. They can also use the solution for effective utilization of staff members and provide road safety counselling.
@@ -37,9 +34,9 @@ Our app solution will enable effective design, engineering and delivery of  Polk
 # How it works?
 
 How it works:
-1. Camera Management: Add/edit/delete cameras using DAOs
+1. Camera Management: Add/edit/delete cameras using DAOs on Theta Blockchain
 2. Object Detection using Pytorch/Tensorflow deep learning library using CNN neural networks.
-3.  Video analytics configuration using DAOs
+3.  Video analytics configuration using DAOs on Theta Blockchain
 4. Live streaming with Object Detection Video Analytics
 5. Alarm storage. Save/delete alarm metadata and image to/from IPFS. Store the hash returned from IPFS and provide links to alarms and blockchain transaction details.
 6. Alarm Viewer: Add alarms with a single touch.
@@ -51,7 +48,7 @@ Alarm Viewer and Notifier:
 3. You can also delete an existing alarm.
 4. Data DAO for Monitoring, Incident Management, preserving vital data
 
-How the mobile version of the solution works?: https://sites.google.com/view/transport-intel/home/works?authuser=1
+Website: https://sites.google.com/view/transport-intel/
 
 
 # Architecture
@@ -82,43 +79,22 @@ Business Plan: https://drive.google.com/drive/folders/1pke6_VQb9Zco8-WllI3n41xTr
 
 # Technical Details
 
-# Polkadot, Ink Smart Contracts and Intel oneAPI toolkit 
+# Theta Blockchain
 
-We are using Polkadot, Ink Smart Contracts and Intel oneAPI for solving multiple challenges in investigative case management of road incidents for the admin role: sentiment analysis of a particular road incident for the admin role, social media text mining for a road incident and classification and severity of the incidents, early stage incident response and prevention.   Website: https://sites.google.com/view/transport-intel/home?authuser=1
+- SAP BTP platform integration with Theta Blockchain
 
-Polkadot Analytics and Visualization Tool: https://github.com/aspiringsecurity/Transport/tree/main/dot-analytics-tooling
+- Theta Blockchain and SAP Enterprise ETL library: Please visit https://github.com/aspiringsecurity/Transport/tree/main/Theta-Modules/theta-blockchain-UI5-Fiori-BTP
 
-Ink NFT viewer for viewing the NFTs of NFC tags of vehicles and service personnel: We are extending the Ink NFT viewer dapp for viewing the NFTs generated for the NFC tags of vehicles and service repair personnel at the incident sites. Please visit: https://github.com/aspiringsecurity/Transport/tree/main/ink-nft-viewer
+- Theta User Analytics for tabulation, organization and validation: Please visit https://github.com/aspiringsecurity/Transport/tree/main/theta-analytics-tooling
 
-WASM smart contract for decentralized Transport Incident Management: We are developing smart contracts in wasm ink for decentralized Transport Incident Management, deploying on Shibuya, extending UI interaction with astar.js. Please visit https://github.com/aspiringsecurity/Transport/tree/main/wasm-transport-dao
+- Theta MetaChain implementation: Please visit https://github.com/aspiringsecurity/Transport/tree/main/Theta-Modules/theta-protocol-subchain-implementation
 
-Experiments with pallet assets chain extension: https://github.com/aspiringsecurity/Transport/tree/main/pallet-assets-chain-extension
+- Theta User Security for 5 dapp personas: Please visit https://github.com/aspiringsecurity/Transport/tree/main/Theta-User-Security/Theta-User-Security
 
-
-# Polkadot eco-system and tools
-
-Subsquid - Data validation tool using Subsquid. Please visit: https://github.com/aspiringsecurity/Transport/tree/main/Solution-Modules/data-validation-analytics-squid-crust
-Demo at https://drive.google.com/drive/folders/1pke6_VQb9Zco8-WllI3n41xTrLTWjFQ4
-
-Subsocial plugins - Subsocial plugins with integration with an analytics tool for visualization, tabulation and organization of data: https://github.com/aspiringsecurity/Transport/tree/main/dapp-grillchat-subsocial-spreadsheet 
-Subsocial dapp module for road safety counselling
-https://github.com/aspiringsecurity/Transport/tree/main/dapp-road-counseling-subsocial
-Extension with Grill Chat.
-Demo for subsocial plugins available at https://drive.google.com/drive/folders/1pke6_VQb9Zco8-WllI3n41xTrLTWjFQ4
-
-Interlay - Dapp for Bitcoin on Kintsugi for Transport Incident Management. integration with zkp and scrypt tools on bitcoin. Please visit: https://github.com/aspiringsecurity/Transport/tree/main/Solution-Modules/data-dao-dapp-interbtc-kintsugi and https://github.com/aspiringsecurity/Transport/tree/main/Solution-Modules/interbtc-squid
-Demo for wallet using zkp and scrypt tools on bitcoin at the google drive. Demo at https://drive.google.com/drive/folders/1pke6_VQb9Zco8-WllI3n41xTrLTWjFQ4
-
-Wasm dapp: Dapp for Transport DAO (decentralized autonomous organization) using Wasm smart contracts. Please visit: https://github.com/aspiringsecurity/Transport/tree/main/wasm-transport-dao. Demo for the module at https://drive.google.com/drive/folders/1pke6_VQb9Zco8-WllI3n41xTrLTWjFQ4
-
-Bifrost - Dapp for vtokens and analytics tool for tabulation, organization and visualization: https://github.com/aspiringsecurity/Transport/tree/main/Solution-Modules/Bifrost-Token-Data-Tabulation-Analytics-tooling . Demo for the module at https://drive.google.com/drive/folders/1pke6_VQb9Zco8-WllI3n41xTrLTWjFQ4
-
-Acala dapp challenge - Acala  dapp for NFT marketplace for spare parts. Please visit: https://github.com/aspiringsecurity/Transport/tree/main/Solution-Modules/Spare_parts_NFT_Acala-EVM%2B
-Demo for dapp at https://drive.google.com/drive/folders/1pke6_VQb9Zco8-WllI3n41xTrLTWjFQ4
-
-Acala (Chopsticks challenge): Developer and Governance tooling with Chopsticks. Please visit: https://github.com/aspiringsecurity/Transport/tree/main/Solution-Modules/analytics-tool-chopsticks-acala . Demo for the challenge at https://drive.google.com/drive/folders/1pke6_VQb9Zco8-WllI3n41xTrLTWjFQ4
+- Theta Incident System Management: Please visit https://github.com/aspiringsecurity/Transport/tree/main/Theta-user-report-incidents-upload
 
 
+# Hardware APIs and iot development
 
 # Intel one API specific instructions
 
@@ -141,5 +117,43 @@ Features:
 2. Intel oneapi Spare parts billing and automation using onchain/offchain payments: Please visit https://github.com/aspiringsecurity/Transport/tree/main/dot-analytics-tooling/transport-intel-oneapi-analytics/spare-parts-intel-oneapi-invoice-to-cash-automation
 
 We are extending the example of intel oneapi powered invoice to cash automation to develop an invoicing suite and Web3 Car Parts Dashboard that enables Transport Ministry and third party service and repair organizations to keep track of all the details of their transport assets, DeFi investments, transactions, and assets across all multiple chains and also displays DAO data using a data visualization chart. We are building our solution on top of an existing web3 dashboard system and wish to integrate an analytics, tabulation and collaboration tool namely EtherCalc.
+
+
+# Supporting Web3 Eco-system Tools
+
+- Polkadot, Ink Smart Contracts
+
+We are using Polkadot, Ink Smart Contracts and Intel oneAPI for solving multiple challenges in investigative case management of road incidents for the admin role: sentiment analysis of a particular road incident for the admin role, social media text mining for a road incident and classification and severity of the incidents, early stage incident response and prevention.   Website: https://sites.google.com/view/transport-intel/home?authuser=1
+
+Polkadot Analytics and Visualization Tool: https://github.com/aspiringsecurity/Transport/tree/main/dot-analytics-tooling
+
+Ink NFT viewer for viewing the NFTs of NFC tags of vehicles and service personnel: We are extending the Ink NFT viewer dapp for viewing the NFTs generated for the NFC tags of vehicles and service repair personnel at the incident sites. Please visit: https://github.com/aspiringsecurity/Transport/tree/main/ink-nft-viewer
+
+WASM smart contract for decentralized Transport Incident Management: We are developing smart contracts in wasm ink for decentralized Transport Incident Management, deploying on Shibuya, extending UI interaction with astar.js. Please visit https://github.com/aspiringsecurity/Transport/tree/main/wasm-transport-dao
+
+Experiments with pallet assets chain extension: https://github.com/aspiringsecurity/Transport/tree/main/pallet-assets-chain-extension
+
+- Polkadot eco-system and tools
+
+Subsquid - Data validation tool using Subsquid. Please visit: https://github.com/aspiringsecurity/Transport/tree/main/Solution-Modules/data-validation-analytics-squid-crust
+Demo at https://drive.google.com/drive/folders/1pke6_VQb9Zco8-WllI3n41xTrLTWjFQ4
+
+Subsocial plugins - Subsocial plugins with integration with an analytics tool for visualization, tabulation and organization of data: https://github.com/aspiringsecurity/Transport/tree/main/dapp-grillchat-subsocial-spreadsheet 
+Subsocial dapp module for road safety counselling
+https://github.com/aspiringsecurity/Transport/tree/main/dapp-road-counseling-subsocial
+Extension with Grill Chat.
+Demo for subsocial plugins available at https://drive.google.com/drive/folders/1pke6_VQb9Zco8-WllI3n41xTrLTWjFQ4
+
+Interlay - Dapp for Bitcoin on Kintsugi for Transport Incident Management. integration with zkp and scrypt tools on bitcoin. Please visit: https://github.com/aspiringsecurity/Transport/tree/main/Solution-Modules/data-dao-dapp-interbtc-kintsugi and https://github.com/aspiringsecurity/Transport/tree/main/Solution-Modules/interbtc-squid
+Demo for wallet using zkp and scrypt tools on bitcoin at the google drive. Demo at https://drive.google.com/drive/folders/1pke6_VQb9Zco8-WllI3n41xTrLTWjFQ4
+
+Wasm dapp: Dapp for Transport DAO (decentralized autonomous organization) using Wasm smart contracts. Please visit: https://github.com/aspiringsecurity/Transport/tree/main/wasm-transport-dao. Demo for the module at https://drive.google.com/drive/folders/1pke6_VQb9Zco8-WllI3n41xTrLTWjFQ4
+
+Bifrost - Dapp for vtokens and analytics tool for tabulation, organization and visualization: https://github.com/aspiringsecurity/Transport/tree/main/Solution-Modules/Bifrost-Token-Data-Tabulation-Analytics-tooling . Demo for the module at https://drive.google.com/drive/folders/1pke6_VQb9Zco8-WllI3n41xTrLTWjFQ4
+
+Acala dapp challenge - Acala  dapp for NFT marketplace for spare parts. Please visit: https://github.com/aspiringsecurity/Transport/tree/main/Solution-Modules/Spare_parts_NFT_Acala-EVM%2B
+Demo for dapp at https://drive.google.com/drive/folders/1pke6_VQb9Zco8-WllI3n41xTrLTWjFQ4
+
+Acala (Chopsticks challenge): Developer and Governance tooling with Chopsticks. Please visit: https://github.com/aspiringsecurity/Transport/tree/main/Solution-Modules/analytics-tool-chopsticks-acala . Demo for the challenge at https://drive.google.com/drive/folders/1pke6_VQb9Zco8-WllI3n41xTrLTWjFQ4
 
 
