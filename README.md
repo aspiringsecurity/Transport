@@ -1,6 +1,6 @@
 # Dot Transport Intel
 
-Technical solution for security and monitoring road incidents using Polkadot Blockchain and Metachain, Intel one API toolkit, Ethereum, IPFS and OSS AI models; enable early detection and prevention of accidents.
+Technical solution for security and monitoring road incidents using Polkadot Blockchain, Ink Smart Contracts and Metachain, Intel one API toolkit, Ethereum, IPFS and OSS AI models; enable early detection and prevention of accidents.
 
 Goal: Ensure effective design, engineering and delivery of a decentralized intelligent solution to make roads safer and better Polkadot Blockchain and Metachain, Intel one API toolkit, Ethereum, IPFS and OSS AI.
 
@@ -9,7 +9,7 @@ Website: https://sites.google.com/view/transport-intel/
 
 # Description
 
-Our solution offers an Artificial Intelligence-based object detection system that utilizes Polkadot blockchain and Metachain, Intel one API toolkit and ethereum blockchain solutions powered by IPFS storage for sorting information obtained from a variety of road junctions, cameras deployed at monitoring spots.
+Our solution offers an Artificial Intelligence-based object detection system that utilizes Polkadot blockchain, Ink Smart Contracts and Metachain, Intel one API toolkit and ethereum blockchain solutions powered by IPFS storage for sorting information obtained from a variety of road junctions, cameras deployed at monitoring spots.
 
 Our app solution will enable effective design, engineering and delivery of Polkadot Blockchain and Metachain, Intel one API toolkit aided solution to make roads safer and better using predictive analytics and automation for incident reporting and reduction in hazardous transportation with capabilities pluggable and extendable to 5 different personas: Driver, Police, Citizen, Dispatcher, Admin. Our solution will benefit: 
 
@@ -36,7 +36,7 @@ Our app solution will enable effective design, engineering and delivery of Polka
 How it works:
 1. Camera Management: Add/edit/delete cameras using DAOs on Polkadot Blockchain
 2. Object Detection using Pytorch/Tensorflow deep learning library using CNN neural networks.
-3.  Video analytics configuration using DAOs on Theta Blockchain
+3.  Video analytics configuration using DAOs on Dot Blockchain
 4. Live streaming with Object Detection Video Analytics
 5. Alarm storage. Save/delete alarm metadata and image to/from IPFS. Store the hash returned from IPFS and provide links to alarms and blockchain transaction details.
 6. Alarm Viewer: Add alarms with a single touch.
