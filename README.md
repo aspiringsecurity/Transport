@@ -11,7 +11,7 @@ Website: https://sites.google.com/view/transport-intel/
 
 Our solution offers an Artificial Intelligence-based object detection system that utilizes Polkadot blockchain and Metachain, Intel one API toolkit and ethereum blockchain solutions powered by IPFS storage for sorting information obtained from a variety of road junctions, cameras deployed at monitoring spots.
 
-Our app solution will enable effective design, engineering and delivery of Theta Blockchain and Theta Metachain, Intel one API toolkit aided solution to make roads safer and better using predictive analytics and automation for incident reporting and reduction in hazardous transportation with capabilities pluggable and extendable to 5 different personas: Driver, Police, Citizen, Dispatcher, Admin. Our solution will benefit: 
+Our app solution will enable effective design, engineering and delivery of Polkadot Blockchain and Metachain, Intel one API toolkit aided solution to make roads safer and better using predictive analytics and automation for incident reporting and reduction in hazardous transportation with capabilities pluggable and extendable to 5 different personas: Driver, Police, Citizen, Dispatcher, Admin. Our solution will benefit: 
 
 - Police Force 
 360 degrees access of the incidents to the action/ administration team. They can manage the complete lifecycle of incident reporting, overall status, traffic monitoring, managing police teams. Using machine learning they can also predict the incident occurrence at any area. This will help in taking necessary actions in advance to control the traffic. They can also use the solution for effective utilization of staff members and provide road safety counselling.
@@ -74,6 +74,46 @@ Business Plan: https://drive.google.com/drive/folders/1pke6_VQb9Zco8-WllI3n41xTr
 - Real Time Alerts and Live Streaming: Real time alerts and live streaming using open source streaming project for incident verification and quick action.
 
 - Real Time Analytics: Analytics of the incidents with sentiment analysis and live incident reporting. road safety eco-system. Health summary of the police staff, scheduling the staff. Reducing misinformation.
+
+
+# Transport DAO tool using Polkadot and Ink Smart Contracts
+
+Transport DAO tool using Polkadot, Ink Smart Contracts and Intel oneAPI for solving multiple challenges in investigative case management of road incidents for the admin role: sentiment analysis of a particular road incident for the admin role, social media text mining for a road incident and classification and severity of the incidents, early stage incident response and prevention.   
+
+Tool Features
+This DAO support tool is designed as a web application that anyone can use easily. It supports wallet connection and Google Login, so even those who have no experience with Web3 or do not have a wallet can get started right away. In addition, the visual interface allows you to see at a glance the progress of your project and the results of your vote. The tool is updated in real time, so you can always see the latest information. There is no need to wait for a regular meeting or approval process.
+
+Main Functions
+Project, Proposal Creation Function: It is easy to create a new project.
+Creating a new project is easy. Just set the project name, description, and members! You can check the progress of the project in real time, so the project will proceed smoothly. You can also set different access rights for each project to ensure security. After creating a project, members can also create proposals and resolutions within the project.
+
+Governance SBT: Astar Blockchain
+Using the Astar blockchain, users of the DAO tool can mint Governance SBTs in accordance with the ERC3525 standard. A Governance SBT (ERC 3525) is a Semi-Fungible Token (SFT) that represents a right to participate in the governance of a project. It allows project members to see their share and voting rights.
+
+Governance Voting Function: 1 SBT = 1 vote.
+Users can vote on project proposals and resolutions according to the rule 1SBT = 1 vote. Users can directly express their opinions on projects of interest to them through Governance Voting. Voting periods and proposals can be easily managed within the tool for efficient decision making.
+
+The tool also publishes the results of the project vote and the mint status of the Governance SBT via blockchain technology. This increases transparency and builds trust among project members and DAO participants.
+
+Self-driving promotion function through incentives:.
+Utilizing the SFT function of the ERC3525 standard, on-chain points are accumulated so that participants' contributions, such as votes, can be visualized. Organizations can give real prizes, wired access to new products, or bonuses to DAO participants based on their visualized contributions. This encourages DAO members to become active voluntarily.
+
+Public forum and communication function (under development):.
+Task management and progress reports can be made in the tool's public forum, and discussions and opinions can be exchanged among members. The tool also has a variety of functions to help members clearly understand their roles and goals, and cooperate with other members to advance the project. The public forum and private message functions facilitate communication among project members. This improves teamwork and increases the success rate of the project.
+
+Benefits of the tool
+Improved decision-making process
+This tool facilitates decision-making and improves the decision-making process of the project. In addition, it encourages members to work autonomously.
+
+Flexibility and speed.
+Decentralizing decision-making and administrative tasks that are concentrated in the manager's hands allows the organization to operate more autonomously. This will increase the speed and flexibility of decision making and improve the overall operational efficiency of the company.
+
+Utilization of Incentives:.
+An incentive system using on-chain points can maintain and improve the motivation of members. Members are rewarded according to their contributions, which encourages them to participate in activities on their own initiative.
+
+Customizable: This DAO support tool can be customized.
+This DAO support tool can be customized to meet the needs of your company or project. By adding your own functions and design, you can build the best DAO tool for your organization.
+
 
 
 
