@@ -181,20 +181,20 @@ Features:
 We are extending the example of intel oneapi powered invoice to cash automation to develop an invoicing suite and Web3 Car Parts Dashboard that enables Transport Ministry and third party service and repair organizations to keep track of all the details of their transport assets, DeFi investments, transactions, and assets across all multiple chains and also displays DAO data using a data visualization chart. We are building our solution on top of an existing web3 dashboard system and wish to integrate an analytics, tabulation and collaboration tool namely EtherCalc.
 
 
-# Supporting Web3 Eco-system Tools
+# Supporting Web2 and Web3 Eco-system Tools
 
 
-# Theta Blockchain
+- Theta Blockchain
 
-- SAP BTP platform integration with Theta Blockchain
+- SAP BTP platform integration
 
-- Theta Blockchain and SAP Enterprise ETL library: Please visit https://github.com/aspiringsecurity/Transport/tree/main/Theta-Modules/theta-blockchain-UI5-Fiori-BTP
+- Blockchain and SAP Enterprise ETL library: Please visit https://github.com/aspiringsecurity/Transport/tree/main/Theta-Modules/theta-blockchain-UI5-Fiori-BTP
 
-- Theta User Analytics for tabulation, organization and validation: Please visit https://github.com/aspiringsecurity/Transport/tree/main/theta-analytics-tooling
+- User Analytics for tabulation, organization and validation: Please visit https://github.com/aspiringsecurity/Transport/tree/main/theta-analytics-tooling
 
-- Theta MetaChain implementation: Please visit https://github.com/aspiringsecurity/Transport/tree/main/Theta-Modules/theta-protocol-subchain-implementation
+- MetaChain implementation: Please visit https://github.com/aspiringsecurity/Transport/tree/main/Theta-Modules/theta-protocol-subchain-implementation
 
-- Theta User Security for 5 dapp personas: Please visit https://github.com/aspiringsecurity/Transport/tree/main/Theta-User-Security/Theta-User-Security
+- User Security for 5 dapp personas: Please visit https://github.com/aspiringsecurity/Transport/tree/main/Theta-User-Security/Theta-User-Security
 
-- Theta Incident System Management: Please visit https://github.com/aspiringsecurity/Transport/tree/main/Theta-user-report-incidents-upload
+- Incident System Management: Please visit https://github.com/aspiringsecurity/Transport/tree/main/Theta-user-report-incidents-upload
 
