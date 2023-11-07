@@ -6,6 +6,8 @@ Goal: Ensure effective design, engineering and delivery of a decentralized intel
 
 Website: https://sites.google.com/view/transport-intel/
 
+OEM DAO Tooling using Ink and Polkadot: We have also developed a DAO tool for OEM Product development, Safety Feature Development and Improving efficiency at OEM companies like Toyota, GM Motors, Ford Motors. Please visit https://github.com/aspiringsecurity/Transport/tree/main/Dao-tooling
+
 
 # Description
 
@@ -52,6 +54,8 @@ Website: https://sites.google.com/view/transport-intel/
 
 
 # Architecture
+
+OEM DAO Tooling using Ink and Polkadot: We have also developed a DAO tool for OEM Product development, Safety Feature Development and Improving efficiency at OEM companies like Toyota, GM Motors, Ford Motors. Please visit https://github.com/aspiringsecurity/Transport/tree/main/Dao-tooling
 
 Data DAO for Monitoring, Incident Management, preserving vital data;  Decentralized NFT voting system for contract work by service providers, Votes are uploaded to IPFS with the most recent vote linking to one before, Creating an NFT on the for NFC tags of vehicles.
 
