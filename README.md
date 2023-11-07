@@ -135,6 +135,10 @@ WASM smart contract for decentralized Transport Incident Management: We are deve
 
 Experiments with pallet assets chain extension: https://github.com/aspiringsecurity/Transport/tree/main/pallet-assets-chain-extension
 
+# Deployment
+
+shibuya：0xD688acB676771F6aA01114c78A39E594564d3944 https://shibuya.subscan.io/account/0xD688acB676771F6aA01114c78A39E594564d3944
+
 - Polkadot eco-system and tools
 
 Subsquid - Data validation tool using Subsquid. Please visit: https://github.com/aspiringsecurity/Transport/tree/main/Solution-Modules/data-validation-analytics-squid-crust
