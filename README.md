@@ -52,6 +52,8 @@ Alarm Viewer and Notifier:
 
 # Demo and Website
 
+Pitch Deck (text) and Screencasts for Dot Transport Intel: https://drive.google.com/drive/u/4/folders/1pke6_VQb9Zco8-WllI3n41xTrLTWjFQ4
+
 Website for Civic Bodies: https://sites.google.com/view/transport-intel/
 
 AStar and Polkadot Blockchain Mobile & Web3 Demo: https://youtu.be/_goh4_VBYPE ; https://youtu.be/Un1Z3ZnvpXQ
@@ -60,7 +62,7 @@ Web3 Demo: https://youtu.be/wBDXdz3m_Z4
 
 Vercel Deployment: https://aspiring-road-safety-infura-deploy.vercel.app/
 
-Pitch Deck: https://youtu.be/Jh_AFWc_kKI
+Pitch Deck Video: https://youtu.be/Jh_AFWc_kKI
 
 
 # Architecture
