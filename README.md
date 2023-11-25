@@ -54,7 +54,7 @@ Alarm Viewer and Notifier:
 
 Website for Civic Bodies: https://sites.google.com/view/transport-intel/
 
-Mobile & Web3 Demo: https://youtu.be/_goh4_VBYPE ; https://youtu.be/Un1Z3ZnvpXQ
+AStar and Polkadot Blockchain Mobile & Web3 Demo: https://youtu.be/_goh4_VBYPE ; https://youtu.be/Un1Z3ZnvpXQ
 
 Web3 Demo: https://youtu.be/wBDXdz3m_Z4
 
