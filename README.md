@@ -50,7 +50,17 @@ Alarm Viewer and Notifier:
 3. You can also delete an existing alarm.
 4. Data DAO for Monitoring, Incident Management, preserving vital data
 
-Website: https://sites.google.com/view/transport-intel/
+# Demo and Website
+
+Website for Civic Bodies: https://sites.google.com/view/transport-intel/
+
+Mobile & Web3 Demo: https://youtu.be/_goh4_VBYPE ; https://youtu.be/Un1Z3ZnvpXQ
+
+Web3 Demo: https://youtu.be/wBDXdz3m_Z4
+
+Vercel Deployment: https://aspiring-road-safety-infura-deploy.vercel.app/
+
+Pitch Deck: https://youtu.be/Jh_AFWc_kKI
 
 
 # Architecture
