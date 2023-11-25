@@ -132,7 +132,7 @@ This DAO support tool can be customized to meet the needs of your company or pro
 
 # Technical Details
 
-- Polkadot, Ink Smart Contracts
+## Polkadot, AStar Ecosystem and Ink Smart Contracts
 
 We are using Polkadot, Ink Smart Contracts and Intel oneAPI for solving multiple challenges in investigative case management of road incidents for the admin role: sentiment analysis of a particular road incident for the admin role, social media text mining for a road incident and classification and severity of the incidents, early stage incident response and prevention.   Website: https://sites.google.com/view/transport-intel/home?authuser=1
 
@@ -150,7 +150,8 @@ shibuya：0xD688acB676771F6aA01114c78A39E594564d3944 https://shibuya.subscan.io/
 
 goerli：0xE8E9a8b52Db9C8afEF0e2F8DC288CF2B9DF27Cb3 https://goerli.etherscan.io/address/0xE8E9a8b52Db9C8afEF0e2F8DC288CF2B9DF27Cb3 https://goerli.etherscan.io/address/0xE8E9a8b52Db9C8afEF0e2F8DC288CF2B9DF27Cb3#code
 
-- Polkadot eco-system and tools
+
+## Polkadot and AStar eco-system and tools
 
 Subsquid - Data validation tool using Subsquid. Please visit: https://github.com/aspiringsecurity/Transport/tree/main/Solution-Modules/data-validation-analytics-squid-crust
 Demo at https://drive.google.com/drive/folders/1pke6_VQb9Zco8-WllI3n41xTrLTWjFQ4
