@@ -1,4 +1,4 @@
-# Dot Transport Intel
+# Dot Transport DAO
 
 Technical solution for security and monitoring road incidents using Polkadot Blockchain, Ink Smart Contracts and Metachain, Intel one API toolkit, Ethereum, IPFS and OSS AI models; enable early detection and prevention of accidents.
 
