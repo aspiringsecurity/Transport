@@ -56,14 +56,6 @@ Pitch Deck (text) and Screencasts for Dot Transport Intel: https://drive.google.
 
 Website for Civic Bodies: https://sites.google.com/view/transport-intel/
 
-AStar and Polkadot Blockchain Mobile & Web3 Demo: https://youtu.be/_goh4_VBYPE ; https://youtu.be/Un1Z3ZnvpXQ
-
-Web3 Demo: https://youtu.be/wBDXdz3m_Z4
-
-Vercel Deployment: https://aspiring-road-safety-infura-deploy.vercel.app/
-
-Pitch Deck Video: https://youtu.be/Jh_AFWc_kKI
-
 
 # Architecture
 
